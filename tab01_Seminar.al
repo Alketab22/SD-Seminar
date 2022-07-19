@@ -1,6 +1,7 @@
 table 50105 "CSD Seminar"
 {
-
+    LookupPageId = 50107;
+    DrillDownPageId = 50107;
 
     fields
     {

@@ -1,1 +1,1 @@
-﻿{"Added":[],"Modified":[],"Removed":[]}
+﻿{"Added":[{"Id":50106,"Kind":12,"Name":"CSD Seminar Card","PackagePath":"/src/Scard.al"},{"Id":50107,"Kind":12,"Name":"CSD Seminar List","PackagePath":"/src/pag02_SeminarList.al"}],"Modified":[{"Id":50105,"Kind":10,"Name":"CSD Seminar","PackagePath":"/src/tab01_Seminar.al"}],"Removed":[]}
