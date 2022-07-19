@@ -1,10 +1,9 @@
 page 50105 "CSD Seminar Setup"
 {
     PageType = Card;
-    Caption = 'CSD Seminar Setup';
+    Caption = 'Seminar Setup';
     InsertAllowed = false;
     DeleteAllowed = false;
-    ApplicationArea = All;
     UsageCategory = Administration;
     SourceTable = "CSD Seminar Setup";
 
@@ -17,7 +16,7 @@ page 50105 "CSD Seminar Setup"
             {
                 field("Seminar Nos"; "Seminar Nos")
                 {
-                    ApplicationArea = All;
+
 
                 }
                 field("Seminar Registration Nos."; "Seminar Registration Nos.")

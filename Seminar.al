@@ -1,8 +1,8 @@
 table 50105 "CSD Seminar"
 {
-    LookupPageId = 50107;
-    DrillDownPageId = 50107;
-
+    LookupPageID = "CSD Seminar List";
+    DrillDownPageID = "CSD Seminar List";
+    Caption = 'Seminar';
     fields
     {
         field(10; "No."; Code[20])
@@ -47,7 +47,7 @@ table 50105 "CSD Seminar"
         }
         field(70; "Blocked"; Boolean)
         {
-            DataClassification = ToBeClassified;
+            Caption = 'Blocked';
         }
         field(80; "Last Date Modified"; Date)
         {
@@ -58,6 +58,10 @@ table 50105 "CSD Seminar"
         {
             Editable = false;
             Caption = 'Comment';
+            FieldClass = FlowField;
+            CalcFormula = exist("CSD Seminar Comment Line"
+             where("Table Name" = const("Seminar"),
+               "No." = Field("No.")));
         }
         field(100; "Seminar Price"; Decimal)
         {
@@ -107,7 +111,7 @@ table 50105 "CSD Seminar"
     }
     var
         SeminarSetup: Record "CSD Seminar Setup";
-        //CommentLine : record "CSD Seminar Comment Line";
+        CommentLine: record "CSD Seminar Comment Line";
         Seminar: Record "CSD Seminar";
         GenProdPostingGroup: Record "Gen. Product Posting Group";
         NoSeriesMgt: Codeunit NoSeriesManagement;
@@ -135,10 +139,11 @@ table 50105 "CSD Seminar"
     trigger OnDelete();
 
     begin
-        //CommentLine.Reset;
-        //CommentLine.SetRange("Table Name", CommentLine."Table Name"::Seminar);
-        //CommentLine.SetRange("No.","No.");
-        //CommentLine.DeleteAll;
+        CommentLine.Reset;
+        CommentLine.SetRange("Table Name",
+        CommentLine."Table Name"::Seminar);
+        CommentLine.SetRange("No.", "No.");
+        CommentLine.DeleteAll;
     end;
 
     local procedure AssistEdit(): Boolean

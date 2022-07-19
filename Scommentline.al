@@ -27,11 +27,11 @@ table 50108 "CSD Seminar Comment Line"
         {
             Caption = 'Line No.';
         }
-        field(50; "Date"; Date)
+        field(50; Date; Date)
         {
             Caption = 'Date';
         }
-        field(60; "Code"; Code[10])
+        field(60; Code; Code[10])
         {
             Caption = 'Code';
         }
