@@ -146,19 +146,17 @@ table 50105 "CSD Seminar"
         CommentLine.DeleteAll;
     end;
 
-    local procedure AssistEdit(): Boolean
-
+    procedure AssistEdit(): Boolean;
     begin
-        begin
-            with Seminar do begin
-                Seminar := Rec;
-                SeminarSetup.get;
-                SeminarSetup.TestField("Seminar Registration Nos.");
-                if NoSeriesMgt.SelectSeries(SeminarSetup."Seminar Nos", xRec."No. Series", "No. Series") then begin
-                    NoSeriesMgt.SetSeries("No.");
-                    Rec := Seminar;
-                    exit(true);
-                end;
+        with Seminar do begin
+            Seminar := Rec;
+            SeminarSetup.get;
+            SeminarSetup.TestField("Seminar Nos");
+            if NoSeriesMgt.SelectSeries(SeminarSetup."Seminar Nos"
+            , xRec."No. Series", "No. Series") then begin
+                NoSeriesMgt.SetSeries("No.");
+                Rec := Seminar;
+                exit(true);
             end;
         end;
     end;
