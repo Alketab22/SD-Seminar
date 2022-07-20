@@ -30,7 +30,7 @@ table 50112 "CSD Seminar Setupp"
 
     keys
     {
-        key(PK; "Primary Key")
+        key(PK; "Primary key")
         {
             Clustered = true;
         }

@@ -5,7 +5,8 @@ page 50104 "CSD Seminar List"
     SourceTable = "CSD Seminarr";
     Caption = 'Seminar List';
     Editable = false;
-    CardPageId = 50105;
+    CardPageId = 50106;
+    ApplicationArea = all;
     layout
     {
         area(Content)
@@ -14,27 +15,27 @@ page 50104 "CSD Seminar List"
             {
                 field("No."; "No.")
                 {
-
+                    ApplicationArea = all;
                 }
                 field(Name; Name)
                 {
-
+                    ApplicationArea = all;
                 }
                 field("Seminar Duration"; "Seminar Duration")
                 {
-
+                    ApplicationArea = all;
                 }
                 field("Seminar Price"; "Seminar Price")
                 {
-
+                    ApplicationArea = all;
                 }
                 field("Maximum participants"; "Maximum participants")
                 {
-
+                    ApplicationArea = all;
                 }
                 field("Minimum participants"; "Minimum participants")
                 {
-
+                    ApplicationArea = all;
                 }
             }
         }
@@ -42,11 +43,11 @@ page 50104 "CSD Seminar List"
         {
             systempart("Links"; Links)
             {
-
+                ApplicationArea = all;
             }
             systempart("Notes"; Notes)
             {
-
+                ApplicationArea = all;
             }
         }
     }

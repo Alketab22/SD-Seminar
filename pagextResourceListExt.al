@@ -1,5 +1,6 @@
 pageextension 50103 "CSD ResourceListExt" extends "Resource List" //OriginalId
 {
+
     layout
     {
         modify(Type)

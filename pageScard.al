@@ -3,7 +3,8 @@ page 50106 "CSD Seminar Card"
     PageType = Card;
     Caption = 'Seminar Card';
     SourceTable = "CSD Seminarr";
-
+    ApplicationArea = all;
+    UsageCategory = Lists;
     layout
     {
         area(Content)
@@ -13,6 +14,7 @@ page 50106 "CSD Seminar Card"
                 field("No."; "No.")
                 {
                     AssistEdit = true;
+                    ApplicationArea = all;
                     trigger OnAssistEdit()
 
                     begin
@@ -24,46 +26,46 @@ page 50106 "CSD Seminar Card"
                 }
                 field(Name; Name)
                 {
-
+                    ApplicationArea = All;
                 }
                 field("Search Name"; "Search Name")
                 {
-
+                    ApplicationArea = all;
                 }
                 field("Seminar Duration"; "Seminar Duration")
                 {
-
+                    ApplicationArea = all;
                 }
                 field("Maximum participants"; "Maximum participants")
                 {
-
+                    ApplicationArea = all;
                 }
                 field("Minimum participants"; "Minimum participants")
                 {
-
+                    ApplicationArea = all;
                 }
                 field(Blocked; Blocked)
                 {
-
+                    ApplicationArea = all;
                 }
                 field("Last Date Modified"; "Last Date Modified")
                 {
-
+                    ApplicationArea = all;
                 }
             }
             group(Invoicing)
             {
                 field("Gen. Prod. Posting Group"; "Gen. Prod. Posting Group")
                 {
-
+                    ApplicationArea = all;
                 }
                 field("VAT Prod. Posting Group"; "VAT Prod. Posting Group")
                 {
-
+                    ApplicationArea = all;
                 }
                 field("Seminar Price"; "Seminar Price")
                 {
-
+                    ApplicationArea = all;
                 }
             }
         }
@@ -71,11 +73,11 @@ page 50106 "CSD Seminar Card"
         {
             systempart("Links"; Links)
             {
-
+                ApplicationArea = all;
             }
             systempart("Notes"; Notes)
             {
-
+                ApplicationArea = all;
             }
         }
     }

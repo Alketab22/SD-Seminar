@@ -1,5 +1,6 @@
 tableextension 50100 "CSD ResourceExt" extends Resource
 {
+
     fields
     {
         modify("Profit %")
@@ -16,6 +17,7 @@ tableextension 50100 "CSD ResourceExt" extends Resource
         }
         field(50101; "CSD Resource Type"; Option)
         {
+
             Caption = 'Resource Type';
             OptionMembers = "Internal","External";
             OptionCaption = 'Internal, External';
