@@ -3,30 +3,36 @@ table 50105 "CSD Seminarr"
     LookupPageID = "CSD Seminar List";
     DrillDownPageID = "CSD Seminar List";
     Caption = 'Seminar';
-    
+
     fields
     {
         field(10; "No."; Code[20])
         {
             Caption = 'No.';
-            trigger OnValidate();
+            trigger OnValidate()
+
             begin
                 if "No." <> xRec."No." then begin
-                    SeminarSetup.GET;
+                    SeminarSetup.Get();
                     NoSeriesMgt.TestManual(SeminarSetup."Seminar Nos");
                     "No. Series" := '';
                 end;
+
             end;
+
         }
         field(20; "Name"; Text[50])
         {
             Caption = 'Name';
-            trigger OnValidate();
+            trigger OnValidate()
+
             begin
                 if ("Search Name" = UpperCase(xRec.Name)) or
-                  ("Search Name" = '') then
+                ("Search Name" = '') then
                     "Search Name" := Name;
             end;
+
+
         }
         field(30; "Seminar Duration"; Decimal)
         {
