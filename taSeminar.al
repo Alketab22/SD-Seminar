@@ -1,4 +1,4 @@
-table 50105 "CSD Seminar"
+table 50105 "CSD Seminarr"
 {
     LookupPageID = "CSD Seminar List";
     DrillDownPageID = "CSD Seminar List";
@@ -54,6 +54,7 @@ table 50105 "CSD Seminar"
             Editable = false;
             Caption = 'Last Date Modified';
         }
+
         field(90; "Comment"; Boolean)
         {
             Editable = false;
@@ -63,6 +64,7 @@ table 50105 "CSD Seminar"
              where("Table Name" = const("Seminar"),
                "No." = Field("No.")));
         }
+
         field(100; "Seminar Price"; Decimal)
         {
             Caption = 'Seminar Price';
@@ -110,9 +112,9 @@ table 50105 "CSD Seminar"
         }
     }
     var
-        SeminarSetup: Record "CSD Seminar Setup";
+        SeminarSetup: Record "CSD Seminar Setupp";
         CommentLine: record "CSD Seminar Comment Line";
-        Seminar: Record "CSD Seminar";
+        Seminar: Record "CSD Seminarr";
         GenProdPostingGroup: Record "Gen. Product Posting Group";
         NoSeriesMgt: Codeunit NoSeriesManagement;
 

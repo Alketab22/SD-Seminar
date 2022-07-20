@@ -20,7 +20,7 @@ table 50108 "CSD Seminar Comment Line"
         {
             Caption = 'No.';
             TableRelation = if ("Table Name" = const(Seminar))
-                         "CSD Seminar";
+                         "CSD Seminarr";
 
         }
         field(40; "Line No."; Integer)

@@ -5,7 +5,7 @@ page 50105 "CSD Seminar Setup"
     InsertAllowed = false;
     DeleteAllowed = false;
     UsageCategory = Administration;
-    SourceTable = "CSD Seminar Setup";
+    SourceTable = "CSD Seminar Setupp";
 
 
     layout
