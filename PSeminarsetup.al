@@ -31,10 +31,6 @@ page 50105 "CSD Seminar Setup"
         }
     }
 
-
-
-
-
     trigger OnOpenPage();
     begin
         if not get then begin
