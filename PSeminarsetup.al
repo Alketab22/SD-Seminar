@@ -2,8 +2,8 @@ page 50105 "CSD Seminar Setup"
 {
     PageType = Card;
     Caption = 'Seminar Setup';
-    InsertAllowed = true;
-    DeleteAllowed = true;
+    InsertAllowed = false;
+    DeleteAllowed = false;
     UsageCategory = Administration;
     SourceTable = "CSD Seminar Setupp";
     ApplicationArea = all;
@@ -14,16 +14,16 @@ page 50105 "CSD Seminar Setup"
         {
             group(Numbering)
             {
-                field("Seminar Nos"; "Seminar Nos")
+                field("Seminar Nos"; xRec."Seminar Nos")
                 {
                     ApplicationArea = all;
 
                 }
-                field("Seminar Registration Nos."; "Seminar Registration Nos.")
+                field("Seminar Registration Nos."; xRec."Seminar Registration Nos.")
                 {
                     ApplicationArea = all;
                 }
-                field("Posted Seminar Reg. Nos."; "Posted Seminar Reg. Nos.")
+                field("Posted Seminar Reg. Nos."; xRec."Posted Seminar Reg. Nos.")
                 {
                     ApplicationArea = all;
                 }
@@ -33,9 +33,9 @@ page 50105 "CSD Seminar Setup"
 
     trigger OnOpenPage();
     begin
-        if not get then begin
-            Init();
-            Insert();
+        if not xRec.get then begin
+            xRec.Init();
+            xRec.Insert();
         end;
 
     end;

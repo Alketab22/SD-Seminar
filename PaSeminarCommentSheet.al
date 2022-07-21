@@ -11,16 +11,16 @@ page 50109 "CSD Seminar Comment Sheet"
         {
             repeater(Group)
             {
-                field(Date; Date)
+                field(Date; xRec.Date)
                 {
                     ApplicationArea = all;
                 }
-                field(Code; Code)
+                field(Code; xRec.Code)
                 {
                     Visible = false;
                     ApplicationArea = all;
                 }
-                field(Comment; Comment)
+                field(Comment; xRec.Comment)
                 {
                     ApplicationArea = all;
                 }

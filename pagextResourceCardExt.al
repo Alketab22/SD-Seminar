@@ -1,17 +1,16 @@
 pageextension 50101 "CSD ResourceCardExt" extends "Resource Card"
 {
-
     layout
 
     {
 
         addlast(General)
         {
-            field("CSD Resource Type"; "CSD Resource Type")
+            field("CSD Resource Type"; xRec."CSD Resource Type")
             {
 
             }
-            field("CSD Quantity Per Day"; "CSD Quantity Per Day")
+            field("CSD Quantity Per Day"; xRec."CSD Quantity Per Day")
             {
 
             }
@@ -26,7 +25,7 @@ pageextension 50101 "CSD ResourceCardExt" extends "Resource Card"
             {
                 Caption = 'Room';
                 Visible = ShowMaxField;
-                field("CSD Maximum Participants"; "CSD Maximum Participants")
+                field("CSD Maximum Participants"; xRec."CSD Maximum Participants")
                 {
 
                 }
@@ -37,7 +36,7 @@ pageextension 50101 "CSD ResourceCardExt" extends "Resource Card"
     trigger OnafterGetRecord();
 
     begin
-        ShowMaxField := (Type = Type::Machine);
+        ShowMaxField := (xRec."CSD Resource Type" = xRec."CSD Resource Type"::Internal);
         CurrPage.Update(false);
     end;
 

@@ -1,4 +1,4 @@
-pageextension 50103 "CSD ResourceListExt" extends "Resource List" //OriginalId
+pageextension 50103 "CSD ResourceListExt" extends "Resource List"
 {
 
     layout
@@ -9,11 +9,11 @@ pageextension 50103 "CSD ResourceListExt" extends "Resource List" //OriginalId
         }
         addafter(Type)
         {
-            field("CSD Resource Type"; "CSD Resource Type")
+            field("CSD Resource Type"; xRec."CSD Resource Type")
             {
-
+                ApplicationArea = all;
             }
-            field("CSD Maximum Participants"; "CSD Maximum Participants")
+            field("CSD Maximum Participants"; xRec."CSD Maximum Participants")
             {
                 Visible = ShowMaxField;
             }
@@ -22,8 +22,8 @@ pageextension 50103 "CSD ResourceListExt" extends "Resource List" //OriginalId
     }
     trigger OnOpenPage()
     begin
-        ShowType := (GetFilter(type) = '');
-        ShowMaxField := (GetFilter(Type) = format(Type::machine));
+        ShowType := (xRec.GetFilter(type) = '');
+        ShowMaxField := (xRec.GetFilter(Type) = format(xRec.Type::machine));
     end;
 
     var

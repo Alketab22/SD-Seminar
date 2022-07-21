@@ -13,27 +13,27 @@ page 50104 "CSD Seminar List"
         {
             repeater(group)
             {
-                field("No."; "No.")
+                field("No."; xRec."No.")
                 {
                     ApplicationArea = all;
                 }
-                field(Name; Name)
+                field(Name; xRec.Name)
                 {
                     ApplicationArea = all;
                 }
-                field("Seminar Duration"; "Seminar Duration")
+                field("Seminar Duration"; xRec."Seminar Duration")
                 {
                     ApplicationArea = all;
                 }
-                field("Seminar Price"; "Seminar Price")
+                field("Seminar Price"; xRec."Seminar Price")
                 {
                     ApplicationArea = all;
                 }
-                field("Maximum participants"; "Maximum participants")
+                field("Maximum participants"; xRec."Maximum participants")
                 {
                     ApplicationArea = all;
                 }
-                field("Minimum participants"; "Minimum participants")
+                field("Minimum participants"; xRec."Minimum participants")
                 {
                     ApplicationArea = all;
                 }

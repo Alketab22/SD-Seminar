@@ -11,26 +11,28 @@ tableextension 50100 "CSD ResourceExt" extends Resource
                 Rec.TestField("Unit Cost");
             end;
         }
-        modify(Type)
-        {
-            OptionCaption = 'Instructor,Room';
-        }
-        field(50101; "CSD Resource Type"; Option)
+        field(50101; "CSD Resource Type"; Enum "CSD Resource Type")
         {
 
             Caption = 'Resource Type';
-            OptionMembers = "Internal","External";
-            OptionCaption = 'Internal, External';
+
         }
-        field(50102; "CSD Maximum Participants"; Integer)
+        field(50102; "CSD Seminar Type"; Enum "Csd Seminar type")
+        {
+            Caption = 'CSD Seminar Type';
+        }
+        field(50103; "CSD Maximum Participants"; Integer)
         {
             Caption = 'Maximum Participants';
         }
-        field(50103; "CSD Quantity Per Day"; Decimal)
+        field(50104; "CSD Quantity Per Day"; Decimal)
         {
             Caption = 'Quantity Per Day';
         }
     }
 }
+
+
+
 
 
