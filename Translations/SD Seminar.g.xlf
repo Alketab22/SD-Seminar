@@ -188,15 +188,20 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension CSD ResourceExt - Field CSD Resource Type - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 2331780929 - Field 1204095466 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 348912950">
-          <source>Internal, External</source>
+        <trans-unit id="TableExtension 2331780929 - Field 2793141957 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 348912950">
+          <source>CSD Seminar Type</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CSD ResourceExt - Field CSD Resource Type - Property OptionCaption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CSD ResourceExt - Field CSD Seminar Type - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 2331780929 - Change 1878130204 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 348912950">
-          <source>Instructor,Room</source>
+        <trans-unit id="Enum 1204095466 - EnumValue 1965869807 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>External</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CSD ResourceExt - Change Type - Property OptionCaption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum CSD Resource Type - EnumValue External - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1204095466 - EnumValue 990296649 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Internal</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum CSD Resource Type - EnumValue Internal - Property Caption</note>
         </trans-unit>
       </group>
     </body>

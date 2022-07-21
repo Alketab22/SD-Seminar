@@ -17,7 +17,7 @@ tableextension 50100 "CSD ResourceExt" extends Resource
             Caption = 'Resource Type';
 
         }
-        field(50102; "CSD Seminar Type"; Enum "Csd Seminar type")
+        field(50102; "CSD Seminar Type"; Enum "CSD Seminar Type")
         {
             Caption = 'CSD Seminar Type';
         }

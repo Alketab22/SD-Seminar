@@ -6,7 +6,7 @@ enum 50100 "CSD Resource Type"
     {
         Caption = 'Internal';
     }
-    value(1; External)
+    value(1; "External")
     {
         Caption = 'External';
     }

@@ -1,5 +1,6 @@
 pageextension 50101 "CSD ResourceCardExt" extends "Resource Card"
 {
+
     layout
 
     {
@@ -8,11 +9,11 @@ pageextension 50101 "CSD ResourceCardExt" extends "Resource Card"
         {
             field("CSD Resource Type"; xRec."CSD Resource Type")
             {
-
+                ApplicationArea = all;
             }
             field("CSD Quantity Per Day"; xRec."CSD Quantity Per Day")
             {
-
+                ApplicationArea = all;
             }
 
         }
@@ -27,7 +28,7 @@ pageextension 50101 "CSD ResourceCardExt" extends "Resource Card"
                 Visible = ShowMaxField;
                 field("CSD Maximum Participants"; xRec."CSD Maximum Participants")
                 {
-
+                    ApplicationArea = all;
                 }
             }
         }

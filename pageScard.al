@@ -1,5 +1,6 @@
 page 50106 "CSD Seminar Card"
 {
+
     PageType = Card;
     Caption = 'Seminar Card';
     SourceTable = "CSD Seminarr";
@@ -26,7 +27,7 @@ page 50106 "CSD Seminar Card"
                 }
                 field(Name; xRec.Name)
                 {
-                    ApplicationArea = All;
+                    ApplicationArea = all;
                 }
                 field("Search Name"; xRec."Search Name")
                 {
@@ -90,6 +91,7 @@ page 50106 "CSD Seminar Card"
             {
                 action("Co&mment")
                 {
+                    ApplicationArea = all;
                     RunObject = page "CSD Seminar Comment Sheet";
                     RunPageLink = "Table Name" = const(Seminar),
                     "No." = field("No.");
