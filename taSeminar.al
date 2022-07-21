@@ -9,16 +9,7 @@ table 50105 "CSD Seminarr"
         field(10; "No."; Code[20])
         {
             Caption = 'No.';
-            trigger OnValidate()
 
-            begin
-                if "No." <> xRec."No." then begin
-                    SeminarSetup.Get();
-                    NoSeriesMgt.TestManual(SeminarSetup."Seminar Nos");
-                    "No. Series" := '';
-                end;
-
-            end;
 
         }
         field(20; "Name"; Text[50])
@@ -81,7 +72,9 @@ table 50105 "CSD Seminarr"
         {
             Caption = 'Gen. Prod. Posting Group';
             TableRelation = "Gen. Business Posting Group";
+            /*
             trigger OnValidate();
+
             begin
                 if (xRec."Gen. Prod. Posting Group" <>
                 "Gen. Prod. Posting Group") then begin
@@ -89,7 +82,7 @@ table 50105 "CSD Seminarr"
                     (GenProdPostingGroup, "Gen. Prod. Posting Group") then
                         Validate("VAT Prod. Posting Group", GenProdPostingGroup."Def. VAT Prod. Posting Group");
                 end;
-            end;
+            end; */
         }
         field(120; "VAT Prod. Posting Group"; Code[10])
         {
@@ -159,7 +152,7 @@ table 50105 "CSD Seminarr"
     begin
         with Seminar do begin
             Seminar := Rec;
-            SeminarSetup.get;
+            SeminarSetup.Get();
             SeminarSetup.TestField("Seminar Nos");
             if NoSeriesMgt.SelectSeries(SeminarSetup."Seminar Nos"
             , xRec."No. Series", "No. Series") then begin
@@ -169,4 +162,5 @@ table 50105 "CSD Seminarr"
             end;
         end;
     end;
+
 }
