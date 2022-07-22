@@ -164,3 +164,4 @@ table 50105 "CSD Seminarr"
     end;
 
 }
+

@@ -38,7 +38,7 @@ pageextension 50101 "CSD ResourceCardExt" extends "Resource Card"
     trigger OnafterGetRecord();
 
     begin
-        ShowMaxField := (xRec."CSD Resource Type" = xRec."CSD Resource Type"::Internal);
+        ShowMaxField := (Rec.Type = Rec.Type::Machine);
         CurrPage.Update(false);
     end;
 

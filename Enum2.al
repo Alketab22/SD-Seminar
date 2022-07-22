@@ -13,4 +13,7 @@ enum 50101 "CSD Seminar Type"
     {
 
     }
+
+
+
 }

@@ -6,11 +6,10 @@ table 50108 "CSD Seminar Comment Line"
 
     fields
     {
-        field(10; "Table Name"; Option)
+        field(10; "Table Name"; Enum "Table Namee")
         {
             Caption = 'Table Name';
-            OptionMembers = "Seminar","Seminar Registration Header","Posted Seminar Reg. Header";
-            OptionCaption = 'Seminar,Seminar Registration Header,Posted Seminar Reg. Header';
+
         }
         field(20; "Document Line Number"; Integer)
         {

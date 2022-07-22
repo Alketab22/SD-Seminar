@@ -23,8 +23,8 @@ pageextension 50103 "CSD ResourceListExt" extends "Resource List"
     }
     trigger OnOpenPage()
     begin
-        ShowType := (xRec.GetFilter("CSD Seminar Type") = '');
-        ShowMaxField := (xRec.GetFilter("CSD Seminar Type") = format(xRec."CSD Seminar Type"::Room));
+        ShowType := (Rec.GetFilter(Rec.Type) = '');
+        ShowMaxField := (Rec.GetFilter(Rec.Type) = format(Rec.Type::Machine));
     end;
 
     var
