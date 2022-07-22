@@ -3,6 +3,7 @@ tableextension 50100 "CSD ResourceExt" extends Resource
 
     fields
     {
+
         modify("Profit %")
         {
             trigger OnAfterValidate()
@@ -15,6 +16,7 @@ tableextension 50100 "CSD ResourceExt" extends Resource
         {
 
             Caption = 'Resource Type';
+
 
         }
         field(50102; "CSD Seminar Type"; Enum "CSD Seminar Type")
