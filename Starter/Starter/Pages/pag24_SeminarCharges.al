@@ -8,7 +8,8 @@ page 50124 "CSD Seminar Charges"
     Caption = 'Seminar Charges';
     PageType = List;
     SourceTable = "CSD Seminar Charge";
-
+    ApplicationArea = all;
+    UsageCategory = Lists;
     layout
     {
         area(content)
@@ -17,30 +18,39 @@ page 50124 "CSD Seminar Charges"
             {
                 field("No."; xRec."No.")
                 {
+                    ApplicationArea = all;
                 }
                 field(Description; xRec.Description)
                 {
+                    ApplicationArea = all;
                 }
                 field(Quantity; xRec.Quantity)
                 {
+                    ApplicationArea = all;
                 }
                 field("Unit of Measure Code"; xRec."Unit of Measure Code")
                 {
+                    ApplicationArea = all;
                 }
                 field("Bill-to Customer No."; xRec."Bill-to Customer No.")
                 {
+                    ApplicationArea = all;
                 }
                 field("Gen. Prod. Posting Group"; xRec."Gen. Prod. Posting Group")
                 {
+                    ApplicationArea = all;
                 }
                 field("Unit Price"; xRec."Unit Price")
                 {
+                    ApplicationArea = all;
                 }
                 field("Total Price"; xRec."Total Price")
                 {
+                    ApplicationArea = all;
                 }
                 field("To Invoice"; xRec."To Invoice")
                 {
+                    ApplicationArea = all;
                 }
             }
         }

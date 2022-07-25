@@ -10,6 +10,7 @@ page 50113 "CSD Seminar Registration List"
     PageType = List;
     SourceTable = "CSD Seminar Reg. Header";
     UsageCategory = lists;
+    ApplicationArea = all;
 
     layout
     {
@@ -19,27 +20,36 @@ page 50113 "CSD Seminar Registration List"
             {
                 field("No."; xRec."No.")
                 {
+                    ApplicationArea = all;
                 }
                 field("Starting Date"; xRec."Starting Date")
                 {
+                    ApplicationArea = all;
                 }
                 field("Seminar No."; xRec."Seminar No.")
                 {
+                    ApplicationArea = all;
                 }
                 field("Seminar Name"; xRec."Seminar Name")
                 {
+                    ApplicationArea = all;
                 }
                 field(Status; xRec.Status)
                 {
+                    ApplicationArea = all;
                 }
-                field(Duration; xRec.Duration)
+
+                field("Duration"; xRec."Duration")
                 {
+                    ApplicationArea = all;
                 }
                 field("Maximum Participants"; xRec."Maximum Participants")
                 {
+                    ApplicationArea = all;
                 }
                 field("Room Resource No."; xRec."Room Resource No.")
                 {
+                    ApplicationArea = all;
                 }
             }
         }
@@ -47,9 +57,11 @@ page 50113 "CSD Seminar Registration List"
         {
             systempart("Links"; Links)
             {
+                ApplicationArea = all;
             }
             systempart("Notes"; Notes)
             {
+                ApplicationArea = all;
             }
         }
     }
