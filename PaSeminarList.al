@@ -26,6 +26,7 @@ page 50104 "CSD Seminar List"
                     ApplicationArea = all;
                 }
                 field("Seminar Price"; xRec."Seminar Price")
+   
                 {
                     ApplicationArea = all;
                 }

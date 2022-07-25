@@ -10,7 +10,6 @@ table 50105 "CSD Seminarr"
         {
             Caption = 'No.';
 
-
         }
         field(20; "Name"; Text[50])
         {
@@ -52,27 +51,26 @@ table 50105 "CSD Seminarr"
             Editable = false;
             Caption = 'Last Date Modified';
         }
-
         field(90; "Comment"; Boolean)
         {
-            Editable = false;
-            Caption = 'Comment';
+            Caption = 'Coment';
             FieldClass = FlowField;
-            CalcFormula = exist("CSD Seminar Comment Line"
-             where("Table Name" = const("Seminar"),
-               "No." = Field("No.")));
-        }
+            CalcFormula = exist("CSD Seminar Comment Line" where("Table Name" = const(Seminar),
+            "No." = field("No.")));
 
+        }
         field(100; "Seminar Price"; Decimal)
         {
+
             Caption = 'Seminar Price';
             AutoFormatType = 1;
         }
+
         field(110; "Gen. Prod. Posting Group"; Code[10])
         {
             Caption = 'Gen. Prod. Posting Group';
             TableRelation = "Gen. Business Posting Group";
-            /*
+
             trigger OnValidate();
 
             begin
@@ -82,7 +80,7 @@ table 50105 "CSD Seminarr"
                     (GenProdPostingGroup, "Gen. Prod. Posting Group") then
                         Validate("VAT Prod. Posting Group", GenProdPostingGroup."Def. VAT Prod. Posting Group");
                 end;
-            end; */
+            end;
         }
         field(120; "VAT Prod. Posting Group"; Code[10])
         {
@@ -150,18 +148,20 @@ table 50105 "CSD Seminarr"
 
     procedure AssistEdit(): Boolean;
     begin
-        with Seminar do begin
-            Seminar := Rec;
-            SeminarSetup.Get();
-            SeminarSetup.TestField("Seminar Nos");
-            if NoSeriesMgt.SelectSeries(SeminarSetup."Seminar Nos"
-            , xRec."No. Series", "No. Series") then begin
-                NoSeriesMgt.SetSeries("No.");
-                Rec := Seminar;
-                exit(true);
-            end;
+
+        Seminar := Rec;
+        SeminarSetup.get;
+        SeminarSetup.TestField("Seminar Nos");
+        if NoSeriesMgt.SelectSeries(SeminarSetup."Seminar Nos"
+        , xRec."No. Series", "No. Series") then begin
+            NoSeriesMgt.SetSeries("No.");
+            Rec := Seminar;
+            exit(true);
         end;
     end;
+
+
+
 
 }
 

@@ -1,4 +1,4 @@
-page 50110 "CSD Seminar Comment List"
+page 50119 "CSD Seminar Comment List"
 {
     PageType = List;
     SourceTable = "CSD Seminar Comment Line";

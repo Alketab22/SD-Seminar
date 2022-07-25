@@ -43,11 +43,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Comment Line - Field Table Name - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 4096966466 - Field 3808951907 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Seminar,Seminar Registration Header,Posted Seminar Reg. Header</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Comment Line - Field Table Name - Property OptionCaption</note>
-        </trans-unit>
         <trans-unit id="Table 2777481400 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Seminar Setup</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -202,6 +197,21 @@
           <source>Internal</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum CSD Resource Type - EnumValue Internal - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 257271912 - EnumValue 3959553737 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Seminar Reg. Header</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Table Namee - EnumValue Posted Seminar Reg. Header - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 257271912 - EnumValue 3718962993 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Seminar</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Table Namee - EnumValue Seminar - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 257271912 - EnumValue 2143111931 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Seminar Registration Header</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Table Namee - EnumValue Seminar Registration Header - Property Caption</note>
         </trans-unit>
       </group>
     </body>

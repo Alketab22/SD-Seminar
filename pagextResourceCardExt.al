@@ -22,6 +22,7 @@ pageextension 50101 "CSD ResourceCardExt" extends "Resource Card"
 
         addafter("Personal data")
         {
+
             group("CSD Room")
             {
 

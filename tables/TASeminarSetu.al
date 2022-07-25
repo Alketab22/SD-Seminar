@@ -1,4 +1,4 @@
-table 50112 "CSD Seminar Setupp"
+table 50119 "CSD Seminar Setupp"
 {
     Caption = 'Seminar Setup';
 
