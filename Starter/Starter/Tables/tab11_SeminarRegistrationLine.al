@@ -25,6 +25,8 @@ table 50111 "CSD Seminar Registration Line"
             begin
                 if "Bill-to Customer No." <> xRec."Bill-to Customer No." then begin
                     if Registered then begin
+
+
                         ERROR(RegisteredErrorTxt,
                           FieldCaption("Bill-to Customer No."),
                           FieldCaption(Registered),

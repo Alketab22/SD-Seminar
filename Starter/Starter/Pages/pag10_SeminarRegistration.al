@@ -76,6 +76,7 @@ page 50110 "CSD Seminar Registration"
 
             part(SeminarRegistrationLines; "CSD Seminar Reg. Subpage")
             {
+                ApplicationArea = all;
                 Caption = 'Lines';
                 SubPageLink = "Document No." = field("No.");
             }
@@ -116,6 +117,7 @@ page 50110 "CSD Seminar Registration"
             }
             group(Invoicing)
             {
+
                 field("Gen. Prod. Posting Group"; xRec."Gen. Prod. Posting Group")
                 {
                     ApplicationArea = all;
@@ -133,6 +135,7 @@ page 50110 "CSD Seminar Registration"
         area(factboxes)
         {
 
+
             part("Seminar Details FactBox"; "CSD Seminar Details FactBox")
             {
 
@@ -142,6 +145,7 @@ page 50110 "CSD Seminar Registration"
             part("Customer Details FactBox"; "Customer Details FactBox")
             {
                 Provider = SeminarRegistrationLines;
+                ApplicationArea = all;
                 SubPageLink = "No." = field("Bill-to Customer No.");
             }
             systempart("Links"; Links)
@@ -159,11 +163,14 @@ page 50110 "CSD Seminar Registration"
     {
         area(navigation)
         {
+
             group("&Seminar Registration")
             {
+
                 Caption = '&Seminar Registration';
                 action("Co&mments")
                 {
+
                     Caption = 'Co&mments';
                     Image = Comment;
                     RunObject = Page 50121;
