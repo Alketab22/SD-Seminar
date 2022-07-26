@@ -17,7 +17,7 @@ table 50112 "CSD Seminar Charge"
         {
             Caption = 'Line No.';
         }
-        field(3; "Type"; Enum "Typee")
+        field(3; Type; Enum "Typee")
         {
             Caption = 'Type';
 
@@ -26,10 +26,10 @@ table 50112 "CSD Seminar Charge"
             var
                 OldType: Integer;
             begin
-                if "Type" <> xRec."Type" then begin
-                    OldType := "Type";
+                if Type <> xRec.Type then begin
+                    OldType := Type;
                     Init;
-                    "Type" := OldType;
+                    Type := OldType;
                 end;
             end;
         }
