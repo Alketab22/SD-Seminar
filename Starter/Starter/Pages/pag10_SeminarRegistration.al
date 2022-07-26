@@ -58,7 +58,7 @@ page 50110 "CSD Seminar Registration"
                 {
                     ApplicationArea = all;
                 }
-                field(Duration; xRec.Duration)
+                field("Duration"; xRec."Duration")
                 {
                     ApplicationArea = all;
                 }
@@ -138,7 +138,6 @@ page 50110 "CSD Seminar Registration"
 
             part("Seminar Details FactBox"; "CSD Seminar Details FactBox")
             {
-
                 SubPageLink = "No." = field("Seminar No.");
                 ApplicationArea = all;
             }
