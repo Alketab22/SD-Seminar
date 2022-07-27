@@ -17,14 +17,14 @@ table 50112 "CSD Seminar Charge"
         {
             Caption = 'Line No.';
         }
-        field(3; Type; Enum "Typee")
+        field(3; "Type"; Enum "Charge")
         {
             Caption = 'Type';
 
 
             trigger OnValidate();
             var
-                OldType: Integer;
+                OldType: Enum Charge;
             begin
                 if Type <> xRec.Type then begin
                     OldType := Type;

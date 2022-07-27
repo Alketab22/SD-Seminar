@@ -1,4 +1,4 @@
-enum 50106 "Typee"
+enum 50106 "Charge"
 {
     Extensible = true;
 

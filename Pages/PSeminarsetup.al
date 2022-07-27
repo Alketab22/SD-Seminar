@@ -5,7 +5,7 @@ page 50105 "CSD Seminar Setup"
     InsertAllowed = false;
     DeleteAllowed = false;
     UsageCategory = Administration;
-    SourceTable = "CSD Seminar Setupp";
+    SourceTable = "CSD Seminar Setup";
     ApplicationArea = all;
 
     layout
@@ -14,16 +14,16 @@ page 50105 "CSD Seminar Setup"
         {
             group(Numbering)
             {
-                field("Seminar Nos"; xRec."Seminar Nos")
+                field("Seminar Nos"; Rec."Seminar Nos.")
                 {
                     ApplicationArea = all;
 
                 }
-                field("Seminar Registration Nos."; xRec."Seminar Registration Nos.")
+                field("Seminar Registration Nos."; Rec."Seminar Registration Nos.")
                 {
                     ApplicationArea = all;
                 }
-                field("Posted Seminar Reg. Nos."; xRec."Posted Seminar Reg. Nos.")
+                field("Posted Seminar Reg. Nos."; Rec."Posted Seminar Reg. Nos.")
                 {
                     ApplicationArea = all;
                 }

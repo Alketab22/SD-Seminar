@@ -18,7 +18,7 @@ table 50108 "CSD Seminar Comment Line"
         field(30; "No."; Code[20])
         {
             Caption = 'No.';
-            TableRelation = if ("Table Name" = const(Seminar)) "CSD Seminarr"
+            TableRelation = if ("Table Name" = const(Seminar)) "CSD Seminar"
             else
             if ("Table Name" = const("Seminar Registration Header")) "CSD Seminar Reg. Header";
 

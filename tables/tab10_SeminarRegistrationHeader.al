@@ -31,7 +31,7 @@ table 50110 "CSD Seminar Reg. Header"
         }
         field(3; "Seminar No."; Code[20])
         {
-            TableRelation = "CSD Seminarr";
+            TableRelation = "CSD Seminar";
             Caption = 'Seminar No.';
             trigger OnValidate();
             begin
@@ -295,13 +295,13 @@ table 50110 "CSD Seminar Reg. Header"
 
     var
         PostCode: Record "Post Code";
-        Seminar: Record "CSD Seminarr";
+        Seminar: Record "CSD Seminar";
         SeminarCommentLine: Record "CSD Seminar Comment Line";
         SeminarCharge: Record "CSD Seminar Charge";
         SeminarRegHeader: Record "CSD Seminar Reg. Header";
         SeminarRegLine: Record "CSD Seminar Registration Line";
         SeminarRoom: Record Resource;
-        SeminarSetup: Record "CSD Seminar Setupp";
+        SeminarSetup: Record "CSD Seminar Setup";
         NoSeriesMgt: Codeunit NoSeriesManagement;
         Text001: Label 'You cannot delete the Seminar Registration, because there is at least one %1 where %2=%3.';
         Text002: Label 'You cannot change the %1, because there is at least one %2 with %3=%4.';

@@ -2,7 +2,7 @@ page 50104 "CSD Seminar List"
 {
     PageType = List;
     UsageCategory = Lists;
-    SourceTable = "CSD Seminarr";
+    SourceTable = "CSD Seminar";
     Caption = 'Seminar List';
     Editable = false;
     CardPageId = 50106;
@@ -11,30 +11,31 @@ page 50104 "CSD Seminar List"
     {
         area(Content)
         {
-            repeater(group)
+            repeater("group")
             {
-                field("No."; xRec."No.")
+                Caption = 'Perseritje';
+                field("No."; Rec."No.")
                 {
                     ApplicationArea = all;
                 }
-                field(Name; xRec.Name)
+                field(Name; Rec.Name)
                 {
                     ApplicationArea = all;
                 }
-                field("Seminar Duration"; xRec."Seminar Duration")
+                field("Seminar Duration"; Rec."Seminar Duration")
                 {
                     ApplicationArea = all;
                 }
-                field("Seminar Price"; xRec."Seminar Price")
-   
+                field("Seminar Price"; Rec."Seminar Price")
+
                 {
                     ApplicationArea = all;
                 }
-                field("Maximum participants"; xRec."Maximum participants")
+                field("Maximum participants"; Rec."Maximum participants")
                 {
                     ApplicationArea = all;
                 }
-                field("Minimum participants"; xRec."Minimum participants")
+                field("Minimum participants"; Rec."Minimum participants")
                 {
                     ApplicationArea = all;
                 }

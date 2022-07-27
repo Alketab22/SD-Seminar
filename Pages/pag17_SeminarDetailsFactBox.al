@@ -6,7 +6,7 @@ page 50117 "CSD Seminar Details FactBox"
 
     Caption = 'Seminar Details';
     PageType = CardPart;
-    SourceTable = "CSD Seminarr";
+    SourceTable = "CSD Seminar";
     ApplicationArea = all;
     UsageCategory = Administration;
 
@@ -14,27 +14,27 @@ page 50117 "CSD Seminar Details FactBox"
     {
         area(content)
         {
-            field("No."; xRec."No.")
+            field("No."; Rec."No.")
             {
                 ApplicationArea = all;
             }
-            field(Name; xRec.Name)
+            field(Name; Rec.Name)
             {
                 ApplicationArea = all;
             }
-            field("Seminar Duration"; xRec."Seminar Duration")
+            field("Seminar Duration"; Rec."Seminar Duration")
             {
                 ApplicationArea = all;
             }
-            field("Minimum Participants"; xRec."Minimum Participants")
+            field("Minimum Participants"; Rec."Minimum Participants")
             {
                 ApplicationArea = all;
             }
-            field("Maximum Participants"; xRec."Maximum Participants")
+            field("Maximum Participants"; Rec."Maximum Participants")
             {
                 ApplicationArea = all;
             }
-            field("Seminar Price"; xRec."Seminar Price")
+            field("Seminar Price"; Rec."Seminar Price")
             {
                 ApplicationArea = all;
             }

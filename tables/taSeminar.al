@@ -1,4 +1,4 @@
-table 50105 "CSD Seminarr"
+table 50105 "CSD Seminar"
 {
     LookupPageID = "CSD Seminar List";
     DrillDownPageID = "CSD Seminar List";
@@ -110,9 +110,9 @@ table 50105 "CSD Seminarr"
         }
     }
     var
-        SeminarSetup: Record "CSD Seminar Setupp";
+        SeminarSetup: Record "CSD Seminar Setup";
         CommentLine: record "CSD Seminar Comment Line";
-        Seminar: Record "CSD Seminarr";
+        Seminar: Record "CSD Seminar";
         GenProdPostingGroup: Record "Gen. Product Posting Group";
         NoSeriesMgt: Codeunit NoSeriesManagement;
 
@@ -121,8 +121,8 @@ table 50105 "CSD Seminarr"
     begin
         if "No." = '' then begin
             SeminarSetup.get;
-            SeminarSetup.TestField("Seminar Registration Nos.");
-            NoSeriesMgt.InitSeries(SeminarSetup."Seminar Registration Nos.", xRec."No. Series", 0D, "No.", "No. Series");
+            SeminarSetup.TestField("Seminar Nos.");
+            NoSeriesMgt.InitSeries(SeminarSetup."Seminar Nos.", xRec."No. Series", 0D, "No.", "No. Series");
         end;
     end;
 
@@ -151,8 +151,8 @@ table 50105 "CSD Seminarr"
 
         Seminar := Rec;
         SeminarSetup.get;
-        SeminarSetup.TestField("Seminar Nos");
-        if NoSeriesMgt.SelectSeries(SeminarSetup."Seminar Nos"
+        SeminarSetup.TestField("Seminar Nos.");
+        if NoSeriesMgt.SelectSeries(SeminarSetup."Seminar Nos."
         , xRec."No. Series", "No. Series") then begin
             NoSeriesMgt.SetSeries("No.");
             Rec := Seminar;

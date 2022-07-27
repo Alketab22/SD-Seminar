@@ -3,7 +3,7 @@ page 50106 "CSD Seminar Card"
 
     PageType = Card;
     Caption = 'Seminar Card';
-    SourceTable = "CSD Seminarr";
+    SourceTable = "CSD Seminar";
     ApplicationArea = all;
     UsageCategory = Lists;
     layout
@@ -12,7 +12,7 @@ page 50106 "CSD Seminar Card"
         {
             group(General)
             {
-                field("No."; xRec."No.")
+                field("No."; Rec."No.")
                 {
                     AssistEdit = true;
                     ApplicationArea = all;
@@ -25,46 +25,46 @@ page 50106 "CSD Seminar Card"
                     end;
 
                 }
-                field(Name; xRec.Name)
+                field(Name; Rec.Name)
                 {
                     ApplicationArea = all;
                 }
-                field("Search Name"; xRec."Search Name")
+                field("Search Name"; Rec."Search Name")
                 {
                     ApplicationArea = all;
                 }
-                field("Seminar Duration"; xRec."Seminar Duration")
+                field("Seminar Duration"; Rec."Seminar Duration")
                 {
                     ApplicationArea = all;
                 }
-                field("Maximum participants"; xRec."Maximum participants")
+                field("Maximum participants"; Rec."Maximum participants")
                 {
                     ApplicationArea = all;
                 }
-                field("Minimum participants"; xRec."Minimum participants")
+                field("Minimum participants"; Rec."Minimum participants")
                 {
                     ApplicationArea = all;
                 }
-                field(Blocked; xRec.Blocked)
+                field(Blocked; Rec.Blocked)
                 {
                     ApplicationArea = all;
                 }
-                field("Last Date Modified"; xRec."Last Date Modified")
+                field("Last Date Modified"; Rec."Last Date Modified")
                 {
                     ApplicationArea = all;
                 }
             }
             group(Invoicing)
             {
-                field("Gen. Prod. Posting Group"; xRec."Gen. Prod. Posting Group")
+                field("Gen. Prod. Posting Group"; Rec."Gen. Prod. Posting Group")
                 {
                     ApplicationArea = all;
                 }
-                field("VAT Prod. Posting Group"; xRec."VAT Prod. Posting Group")
+                field("VAT Prod. Posting Group"; Rec."VAT Prod. Posting Group")
                 {
                     ApplicationArea = all;
                 }
-                field("Seminar Price"; xRec."Seminar Price")
+                field("Seminar Price"; Rec."Seminar Price")
                 {
                     ApplicationArea = all;
                 }

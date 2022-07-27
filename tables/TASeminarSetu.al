@@ -1,4 +1,4 @@
-table 50119 "CSD Seminar Setupp"
+table 50119 "CSD Seminar Setup"
 {
     Caption = 'Seminar Setup';
 
@@ -9,7 +9,7 @@ table 50119 "CSD Seminar Setupp"
             Caption = 'Primary key';
 
         }
-        field(20; "Seminar Nos"; Code[20])
+        field(20; "Seminar Nos."; Code[20])
         {
             Caption = 'Seminar Nos';
             TableRelation = "No. Series";
