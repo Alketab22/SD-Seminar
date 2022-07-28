@@ -14,7 +14,7 @@ page 50110 "CSD Seminar Registration"
         {
             group(General)
             {
-                field("No."; xRec."No.")
+                field("No."; Rec."No.")
                 {
                     ApplicationArea = all;
                     AssistEdit = true;
@@ -24,49 +24,49 @@ page 50110 "CSD Seminar Registration"
                             CurrPage.UPDATE;
                     end;
                 }
-                field("Starting Date"; xRec."Starting Date")
+                field("Starting Date"; Rec."Starting Date")
                 {
                     ApplicationArea = all;
                 }
-                field("Seminar No."; xRec."Seminar No.")
+                field("Seminar No."; Rec."Seminar No.")
                 {
                     ApplicationArea = all;
                 }
-                field("Seminar Name"; xRec."Seminar Name")
+                field("Seminar Name"; Rec."Seminar Name")
                 {
                     ApplicationArea = all;
                 }
-                field("Instructor Resource No."; xRec."Instructor Resource No.")
+                field("Instructor Resource No."; Rec."Instructor Resource No.")
                 {
                     ApplicationArea = all;
                 }
-                field("Instructor Name"; xRec."Instructor Name")
+                field("Instructor Name"; Rec."Instructor Name")
                 {
                     ApplicationArea = all;
                 }
-                field("Posting Date"; xRec."Posting Date")
+                field("Posting Date"; Rec."Posting Date")
                 {
                     ApplicationArea = all;
                 }
 
-                field("Document Date"; xRec."Document Date")
+                field("Document Date"; Rec."Document Date")
                 {
                     ApplicationArea = all;
                 }
-                field(Status; xRec.Status)
+                field(Status; Rec.Status)
                 {
                     ApplicationArea = all;
                 }
-                field("Duration"; xRec."Duration")
+                field("Duration"; Rec."Duration")
                 {
                     ApplicationArea = all;
                 }
-                field("Minimum Participants"; xRec."Minimum Participants")
+                field("Minimum Participants"; Rec."Minimum Participants")
                 {
                     ApplicationArea = all;
 
                 }
-                field("Maximum Participants"; xRec."Maximum Participants")
+                field("Maximum Participants"; Rec."Maximum Participants")
                 {
                     ApplicationArea = all;
                 }
@@ -81,35 +81,35 @@ page 50110 "CSD Seminar Registration"
             }
             group("Seminar Room")
             {
-                field("Room Resource No."; xRec."Room Resource No.")
+                field("Room Resource No."; Rec."Room Resource No.")
                 {
                     ApplicationArea = all;
                 }
-                field("Room Name"; xRec."Room Name")
+                field("Room Name"; Rec."Room Name")
                 {
                     ApplicationArea = all;
                 }
-                field("Room Address"; xRec."Room Address")
+                field("Room Address"; Rec."Room Address")
                 {
                     ApplicationArea = all;
                 }
-                field("Room Address 2"; xRec."Room Address 2")
+                field("Room Address 2"; Rec."Room Address 2")
                 {
                     ApplicationArea = all;
                 }
-                field("Room Post Code"; xRec."Room Post Code")
+                field("Room Post Code"; Rec."Room Post Code")
                 {
                     ApplicationArea = all;
                 }
-                field("Room City"; xRec."Room City")
+                field("Room City"; Rec."Room City")
                 {
                     ApplicationArea = all;
                 }
-                field("Room Country/Reg. Code"; xRec."Room Country/Reg. Code")
+                field("Room Country/Reg. Code"; Rec."Room Country/Reg. Code")
                 {
                     ApplicationArea = all;
                 }
-                field("Room County"; xRec."Room County")
+                field("Room County"; Rec."Room County")
                 {
                     ApplicationArea = all;
                 }
@@ -117,15 +117,15 @@ page 50110 "CSD Seminar Registration"
             group(Invoicing)
             {
 
-                field("Gen. Prod. Posting Group"; xRec."Gen. Prod. Posting Group")
+                field("Gen. Prod. Posting Group"; Rec."Gen. Prod. Posting Group")
                 {
                     ApplicationArea = all;
                 }
-                field("VAT Prod. Posting Group"; xRec."VAT Prod. Posting Group")
+                field("VAT Prod. Posting Group"; Rec."VAT Prod. Posting Group")
                 {
                     ApplicationArea = all;
                 }
-                field("Seminar Price"; xRec."Seminar Price")
+                field("Seminar Price"; Rec."Seminar Price")
                 {
                     ApplicationArea = all;
                 }
@@ -171,10 +171,10 @@ page 50110 "CSD Seminar Registration"
 
                     Caption = 'Co&mments';
                     Image = Comment;
-                    RunObject = Page 50121;
+                    RunObject = Page 50108;
                     RunPageLink = "No." = Field("No.");
-                    RunPageView = where("Table Name" = Const("Seminar Registration Header"));
-                    ApplicationArea = all;
+                    RunPageView = where("Table Name" = Const("Seminar Registration header"));
+
 
                 }
                 action("&Charges")

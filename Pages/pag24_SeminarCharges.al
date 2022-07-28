@@ -20,35 +20,35 @@ page 50124 "CSD Seminar Charges"
                 {
                     ApplicationArea = all;
                 }
-                field(Description; xRec.Description)
+                field(Description; Rec.Description)
                 {
                     ApplicationArea = all;
                 }
-                field(Quantity; xRec.Quantity)
+                field(Quantity; Rec.Quantity)
                 {
                     ApplicationArea = all;
                 }
-                field("Unit of Measure Code"; xRec."Unit of Measure Code")
+                field("Unit of Measure Code"; Rec."Unit of Measure Code")
                 {
                     ApplicationArea = all;
                 }
-                field("Bill-to Customer No."; xRec."Bill-to Customer No.")
+                field("Bill-to Customer No."; Rec."Bill-to Customer No.")
                 {
                     ApplicationArea = all;
                 }
-                field("Gen. Prod. Posting Group"; xRec."Gen. Prod. Posting Group")
+                field("Gen. Prod. Posting Group"; Rec."Gen. Prod. Posting Group")
                 {
                     ApplicationArea = all;
                 }
-                field("Unit Price"; xRec."Unit Price")
+                field("Unit Price"; Rec."Unit Price")
                 {
                     ApplicationArea = all;
                 }
-                field("Total Price"; xRec."Total Price")
+                field("Total Price"; Rec."Total Price")
                 {
                     ApplicationArea = all;
                 }
-                field("To Invoice"; xRec."To Invoice")
+                field("To Invoice"; Rec."To Invoice")
                 {
                     ApplicationArea = all;
                 }

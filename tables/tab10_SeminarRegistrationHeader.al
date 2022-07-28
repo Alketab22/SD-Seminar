@@ -370,7 +370,7 @@ table 50110 "CSD Seminar Reg. Header"
         SeminarRegHeader := Rec;
         SeminarSetup.GET;
         SeminarSetup.TestField("Seminar Registration Nos.");
-        if NoSeriesMgt.SelectSeries(SeminarSetup."Seminar Registration Nos.", OldSeminarRegHeader."No. Series", "No. Series") then begin
+        if NoSeriesMgt.SelectSeries(SeminarSetup."Seminar Registration Nos.", OldSeminarRegHeader."No. Series", SeminarRegHeader."No. Series") then begin
             SeminarSetup.GET;
             SeminarSetup.TestField("Seminar Registration Nos.");
             NoSeriesMgt.SetSeries("No.");

@@ -18,36 +18,36 @@ page 50113 "CSD Seminar Registration List"
         {
             repeater(Group)
             {
-                field("No."; xRec."No.")
+                field("No."; Rec."No.")
                 {
                     ApplicationArea = all;
                 }
-                field("Starting Date"; xRec."Starting Date")
+                field("Starting Date"; Rec."Starting Date")
                 {
                     ApplicationArea = all;
                 }
-                field("Seminar No."; xRec."Seminar No.")
+                field("Seminar No."; Rec."Seminar No.")
                 {
                     ApplicationArea = all;
                 }
-                field("Seminar Name"; xRec."Seminar Name")
+                field("Seminar Name"; Rec."Seminar Name")
                 {
                     ApplicationArea = all;
                 }
-                field(Status; xRec.Status)
+                field(Status; Rec.Status)
                 {
                     ApplicationArea = all;
                 }
 
-                field("Duration"; xRec."Duration")
+                field("Duration"; Rec."Duration")
                 {
                     ApplicationArea = all;
                 }
-                field("Maximum Participants"; xRec."Maximum Participants")
+                field("Maximum Participants"; Rec."Maximum Participants")
                 {
                     ApplicationArea = all;
                 }
-                field("Room Resource No."; xRec."Room Resource No.")
+                field("Room Resource No."; Rec."Room Resource No.")
                 {
                     ApplicationArea = all;
                 }
@@ -75,18 +75,14 @@ page 50113 "CSD Seminar Registration List"
                 Caption = '&Seminar Registration';
                 action("Co&mments")
                 {
-                    /*
+
+
                     Caption = 'Co&mments';
                     Image = Comment;
-                    RunObject = Page 50106;
-                    RunPageLink = "No."=Field("No.");
-                    RunPageView = where("Table Name"=Const("Seminar Registration"));
-                    */
-                    Caption = 'Co&mments';
-                    Image = Comment;
-                    RunObject = Page 50121;
+                    RunObject = Page 50108;
                     RunPageLink = "No." = field("No.");
                     RunPageView = where("Table Name" = const("Seminar Registration Header"));
+
                 }
                 action("&Charges")
                 {

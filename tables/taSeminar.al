@@ -1,4 +1,4 @@
-table 50105 "CSD Seminar"
+table 50100 "CSD Seminar"
 {
     LookupPageID = "CSD Seminar List";
     DrillDownPageID = "CSD Seminar List";
@@ -9,6 +9,14 @@ table 50105 "CSD Seminar"
         field(10; "No."; Code[20])
         {
             Caption = 'No.';
+            trigger OnValidate();
+            begin
+                if "No." <> xRec."No." then begin
+                    SeminarSetup.GET;
+                    NoSeriesMgt.TestManual(SeminarSetup."Seminar Nos.");
+                    "No. Series" := '';
+                end;
+            end;
 
         }
         field(20; "Name"; Text[50])

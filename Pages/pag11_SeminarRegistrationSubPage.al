@@ -8,7 +8,6 @@ page 50111 "CSD Seminar Reg. Subpage"
     DelayedInsert = true;
     PageType = ListPart;
     SourceTable = "CSD Seminar Registration Line";
-    ApplicationArea = all;
     UsageCategory = Lists;
     AutoSplitKey = true;
     layout
@@ -17,52 +16,52 @@ page 50111 "CSD Seminar Reg. Subpage"
         {
             repeater(Group)
             {
-                field("Bill-to Customer No."; xRec."Bill-to Customer No.")
+                field("Bill-to Customer No."; Rec."Bill-to Customer No.")
                 {
                     ApplicationArea = all;
                 }
-                field("Participant Contact No."; xRec."Participant Contact No.")
+                field("Participant Contact No."; Rec."Participant Contact No.")
                 {
                     ApplicationArea = all;
                 }
-                field("Participant Name"; xRec."Participant Name")
+                field("Participant Name"; Rec."Participant Name")
                 {
                     ApplicationArea = all;
                 }
-                field(Participated; xRec.Participated)
+                field(Participated; Rec.Participated)
                 {
                     ApplicationArea = all;
                 }
-                field("Registration Date"; xRec."Registration Date")
+                field("Registration Date"; Rec."Registration Date")
                 {
                     ApplicationArea = all;
                 }
 
-                field("Confirmation Date"; xRec."Confirmation Date")
+                field("Confirmation Date"; Rec."Confirmation Date")
                 {
                     ApplicationArea = all;
                 }
-                field("To Invoice"; xRec."To Invoice")
+                field("To Invoice"; Rec."To Invoice")
                 {
                     ApplicationArea = all;
                 }
-                field(Registered; xRec.Registered)
+                field(Registered; Rec.Registered)
                 {
                     ApplicationArea = all;
                 }
-                field("Seminar Price"; xRec."Seminar Price")
+                field("Seminar Price"; Rec."Seminar Price")
                 {
                     ApplicationArea = all;
                 }
-                field("Line Discount %"; xRec."Line Discount %")
+                field("Line Discount %"; Rec."Line Discount %")
                 {
                     ApplicationArea = all;
                 }
-                field("Line Discount Amount"; xRec."Line Discount Amount")
+                field("Line Discount Amount"; Rec."Line Discount Amount")
                 {
                     ApplicationArea = all;
                 }
-                field(Amount; xRec.Amount)
+                field(Amount; Rec.Amount)
                 {
                     ApplicationArea = all;
                 }

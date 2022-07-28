@@ -1,4 +1,4 @@
-page 50121 "CSD Seminar Comment Sheet"
+page 50108 "CSD Seminar Comment Sheet"
 {
     PageType = List;
     SourceTable = "CSD Seminar Comment Line";
@@ -12,16 +12,16 @@ page 50121 "CSD Seminar Comment Sheet"
         {
             repeater(Group)
             {
-                field(Date; xRec.Date)
+                field(Date; Rec.Date)
                 {
                     ApplicationArea = all;
                 }
-                field(Code; xRec.Code)
+                field(Code; Rec.Code)
                 {
                     Visible = false;
                     ApplicationArea = all;
                 }
-                field(Comment; xRec.Comment)
+                field(Comment; Rec.Comment)
                 {
                     ApplicationArea = all;
                 }

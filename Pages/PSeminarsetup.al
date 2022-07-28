@@ -33,9 +33,9 @@ page 50105 "CSD Seminar Setup"
 
     trigger OnOpenPage();
     begin
-        if not xRec.get then begin
-            xRec.Init();
-            xRec.Insert();
+        if not Rec.get then begin
+            Rec.Init();
+            Rec.Insert();
         end;
 
     end;

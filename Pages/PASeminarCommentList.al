@@ -12,15 +12,15 @@ page 50119 "CSD Seminar Comment List"
         {
             repeater(Group)
             {
-                field(Date; xRec.Date)
+                field(Date; Rec.Date)
                 {
                     ApplicationArea = all;
                 }
-                field(Code; xRec.Code)
+                field(Code; Rec.Code)
                 {
                     ApplicationArea = all;
                 }
-                field(Comment; xRec.Comment)
+                field(Comment; Rec.Comment)
                 {
                     ApplicationArea = all;
                 }
