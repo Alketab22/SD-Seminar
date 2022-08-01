@@ -193,6 +193,296 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Comment Line - Field Table Name - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 1343990944 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Seminar Journal Line</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Journal Line - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1343990944 - Field 2965034906 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bill-to Customer No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Journal Line - Field Bill-to Customer No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1343990944 - Field 172424966 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Charge Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Journal Line - Field Charge Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1343990944 - Field 1290961796 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Chargeable</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Journal Line - Field Chargeable - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1343990944 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Journal Line - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1343990944 - Field 580412389 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Journal Line - Field Document Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1343990944 - Field 486908828 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Journal Line - Field Document No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1343990944 - Field 149522872 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Journal Line - Field Entry Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1343990944 - Field 2567013052 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Instructor Resource No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Journal Line - Field Instructor Resource No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1343990944 - Field 2704330142 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Journal Batch Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Journal Line - Field Journal Batch Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1343990944 - Field 3684440170 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Journal Template Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Journal Line - Field Journal Template Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1343990944 - Field 3320823955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Journal Line - Field Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1343990944 - Field 2868535108 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Participant Contact No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Journal Line - Field Participant Contact No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1343990944 - Field 2349749900 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Participant Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Journal Line - Field Participant Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1343990944 - Field 3710982960 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Journal Line - Field Posting Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1343990944 - Field 103924864 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting No. Series</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Journal Line - Field Posting No. Series - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1343990944 - Field 2704404533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantity</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Journal Line - Field Quantity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1343990944 - Field 1908046867 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reason Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Journal Line - Field Reason Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1343990944 - Field 3014814952 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Res. Ledger Entry No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Journal Line - Field Res. Ledger Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1343990944 - Field 4142915974 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Room Resource No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Journal Line - Field Room Resource No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1343990944 - Field 3972529724 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Seminar No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Journal Line - Field Seminar No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1343990944 - Field 571466171 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Seminar Registration No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Journal Line - Field Seminar Registration No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1343990944 - Field 2720485332 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Journal Line - Field Source Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1343990944 - Field 1882905478 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Journal Line - Field Source No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1343990944 - Field 1753214751 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Journal Line - Field Source Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1343990944 - Field 460889064 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Starting Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Journal Line - Field Starting Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1343990944 - Field 2812148497 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Price</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Journal Line - Field Total Price - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1343990944 - Field 1878130204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Journal Line - Field Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1343990944 - Field 2937233469 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit Price</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Journal Line - Field Unit Price - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3450840598 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Seminar Ledger Entry</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Ledger Entry - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3450840598 - Field 1274301144 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> No. Series</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Ledger Entry - Field  No. Series - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3450840598 - Field 2965034906 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bill-to Customer No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Ledger Entry - Field Bill-to Customer No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3450840598 - Field 172424966 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Charge Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Ledger Entry - Field Charge Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3450840598 - Field 1290961796 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Chargeable</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Ledger Entry - Field Chargeable - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3450840598 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Ledger Entry - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3450840598 - Field 580412389 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Ledger Entry - Field Document Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3450840598 - Field 486908828 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Ledger Entry - Field Document No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3450840598 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Ledger Entry - Field Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3450840598 - Field 149522872 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Ledger Entry - Field Entry Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3450840598 - Field 2567013052 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Instructor Resource No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Ledger Entry - Field Instructor Resource No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3450840598 - Field 2704330142 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Journal Batch Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Ledger Entry - Field Journal Batch Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3450840598 - Field 2868535108 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Participant Contact No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Ledger Entry - Field Participant Contact No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3450840598 - Field 2349749900 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Participant Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Ledger Entry - Field Participant Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3450840598 - Field 3710982960 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Ledger Entry - Field Posting Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3450840598 - Field 2704404533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantity</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Ledger Entry - Field Quantity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3450840598 - Field 1908046867 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reason Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Ledger Entry - Field Reason Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3450840598 - Field 3014814952 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Res. Ledger Entry No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Ledger Entry - Field Res. Ledger Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3450840598 - Field 4142915974 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Room Resource No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Ledger Entry - Field Room Resource No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3450840598 - Field 3972529724 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Seminar No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Ledger Entry - Field Seminar No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3450840598 - Field 571466171 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Seminar Registration No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Ledger Entry - Field Seminar Registration No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3450840598 - Field 2720485332 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Ledger Entry - Field Source Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3450840598 - Field 1882905478 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Ledger Entry - Field Source No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3450840598 - Field 1753214751 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Ledger Entry - Field Source Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3450840598 - Field 460889064 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Starting Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Ledger Entry - Field Starting Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3450840598 - Field 2812148497 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Price</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Ledger Entry - Field Total Price - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3450840598 - Field 1878130204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Ledger Entry - Field Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3450840598 - Field 2937233469 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit Price</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Ledger Entry - Field Unit Price - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3450840598 - Field 2708250016 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>User ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Ledger Entry - Field User ID - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 3775708622 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Seminar Registration Header</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -363,6 +653,46 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Reg. Header - Field VAT Prod. Posting Group - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 1943394374 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Seminar Register</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Register - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1943394374 - Field 1407200743 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Creation Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Register - Field Creation Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1943394374 - Field 2398184335 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>From Entry No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Register - Field From Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1943394374 - Field 2704330142 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Journal Batch Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Register - Field Journal Batch Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1943394374 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Register - Field No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1943394374 - Field 2720485332 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Register - Field Source Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1943394374 - Field 656469164 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>To Entry No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Register - Field To Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1943394374 - Field 2708250016 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>User ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Register - Field User ID - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 1606366568 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Seminar Registration Line</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -473,6 +803,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Setup - Field Seminar Registration Nos. - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Codeunit 4082729148 - NamedType 250657857" size-unit="char" translate="yes" xml:space="preserve">
+          <source>cannot be a closing date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit CSD Seminar Jnl.-Check Line - NamedType ClosingDateTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4082729148 - NamedType 2229563192" size-unit="char" translate="yes" xml:space="preserve">
+          <source>is not within  your range of allowed posting dates </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit CSD Seminar Jnl.-Check Line - NamedType PostingDateTxt</note>
+        </trans-unit>
         <trans-unit id="Page 1944624769 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Seminar Card</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -568,6 +908,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension CSD ResourceCardExt - Control CSD Room - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 1431394974 - Control 3159587088 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1642199961">
+          <source>Seminar</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension CSD SourceCodeSetupExt - Control CSD SeminarGroup - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 2331780929 - Field 3679661628 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 348912950">
           <source>Maximum Participants</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -588,6 +933,21 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension CSD ResourceExt - Field CSD Seminar Type - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 1431394974 - Field 1023874429 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1642199961">
+          <source>Seminar</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CSD SourceCodeSetupExt - Field CSD Seminar - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1267408499 - EnumValue 3753034702 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Resource</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Account - EnumValue  Resource - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1267408499 - EnumValue 4274826855 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>G/L Account</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Account - EnumValue G/L Account - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Enum 1766782118 - EnumValue 4274826855 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>G/L Account</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -598,6 +958,26 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum Charge - EnumValue Resource - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Enum 3456386474 - EnumValue 1766782118 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Charge</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum ChargeT - EnumValue Charge - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3456386474 - EnumValue 4239863583 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Instructor</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum ChargeT - EnumValue Instructor - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3456386474 - EnumValue 4059628121 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Participant</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum ChargeT - EnumValue Participant - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3456386474 - EnumValue 1631617913 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Room</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum ChargeT - EnumValue Room - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Enum 1204095466 - EnumValue 1965869807 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>External</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -607,6 +987,26 @@
           <source>Internal</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum CSD Resource Type - EnumValue Internal - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3475288728 - EnumValue 1046555957 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cancelation</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Entry - EnumValue Cancelation - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3475288728 - EnumValue 684573827 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Registration</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Entry - EnumValue Registration - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2397723431 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Source - EnumValue   - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2397723431 - EnumValue 3718962993 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Seminar</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Source - EnumValue Seminar - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 2278221753 - EnumValue 3844911025 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Canceled</source>

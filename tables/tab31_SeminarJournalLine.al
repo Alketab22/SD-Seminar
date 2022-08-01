@@ -46,79 +46,79 @@ table 50131 "CSD Seminar Journal Line"
         {
             Caption = 'Description';
         }
-        field(10; "Bill-to Customer No."; Code[20])
+        field(9; "Bill-to Customer No."; Code[20])
         {
             Caption = 'Bill-to Customer No.';
             TableRelation = Customer;
         }
-        field(11; "Charge Type"; Enum ChargeT)
+        field(10; "Charge Type"; Enum ChargeT)
         {
             Caption = 'Charge Type';
 
         }
-        field(12; Type; Enum "Account")
+        field(11; Type; Enum "Account")
         {
             Caption = 'Type';
 
         }
-        field(13; Quantity; Decimal)
+        field(12; Quantity; Decimal)
         {
             Caption = 'Quantity';
             DecimalPlaces = 0 : 5;
         }
-        field(14; "Unit Price"; Decimal)
+        field(13; "Unit Price"; Decimal)
         {
             AutoFormatType = 2;
             Caption = 'Unit Price';
         }
-        field(15; "Total Price"; Decimal)
+        field(14; "Total Price"; Decimal)
         {
             AutoFormatType = 1;
             Caption = 'Total Price';
         }
-        field(16; "Participant Contact No."; Code[20])
+        field(15; "Participant Contact No."; Code[20])
         {
             Caption = 'Participant Contact No.';
             TableRelation = Contact;
         }
-        field(17; "Participant Name"; Text[50])
+        field(16; "Participant Name"; Text[50])
         {
             Caption = 'Participant Name';
         }
-        field(18; Chargeable; Boolean)
+        field(17; Chargeable; Boolean)
         {
             Caption = 'Chargeable';
             InitValue = true;
         }
-        field(19; "Room Resource No."; Code[20])
+        field(18; "Room Resource No."; Code[20])
         {
             Caption = 'Room Resource No.';
             TableRelation = Resource where(Type = const(Machine));
         }
-        field(20; "Instructor Resource No."; Code[20])
+        field(19; "Instructor Resource No."; Code[20])
         {
             Caption = 'Instructor Resource No.';
             TableRelation = Resource where(Type = const(Person));
         }
-        field(21; "Starting Date"; Date)
+        field(20; "Starting Date"; Date)
         {
             Caption = 'Starting Date';
         }
-        field(22; "Seminar Registration No."; Code[20])
+        field(21; "Seminar Registration No."; Code[20])
         {
             Caption = 'Seminar Registration No.';
         }
-        field(23; "Res. Ledger Entry No."; Integer)
+        field(22; "Res. Ledger Entry No."; Integer)
         {
             Caption = 'Res. Ledger Entry No.';
             TableRelation = "Res. Ledger Entry";
         }
-        field(30; "Source Type"; Enum "Source")
+        field(23; "Source Type"; Enum "Source")
         {
             Caption = 'Source Type';
 
         }
-        field(31; "Source No."; Code[20])
+        field(24; "Source No."; Code[20])
         {
             Caption = 'Source No.';
             TableRelation = if ("Source Type" = const(Seminar)) "CSD Seminar";
