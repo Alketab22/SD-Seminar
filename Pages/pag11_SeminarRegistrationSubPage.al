@@ -28,7 +28,7 @@ page 50111 "CSD Seminar Reg. Subpage"
                 {
                     ApplicationArea = all;
                 }
-                field(Participated; Rec.Participated)
+                field("Participated"; Rec."Participated")
                 {
                     ApplicationArea = all;
                 }
@@ -45,7 +45,7 @@ page 50111 "CSD Seminar Reg. Subpage"
                 {
                     ApplicationArea = all;
                 }
-                field(Registered; Rec.Registered)
+                field("Registered"; Rec."Registered")
                 {
                     ApplicationArea = all;
                 }
@@ -61,7 +61,7 @@ page 50111 "CSD Seminar Reg. Subpage"
                 {
                     ApplicationArea = all;
                 }
-                field(Amount; Rec.Amount)
+                field("Amount"; Rec."Amount")
                 {
                     ApplicationArea = all;
                 }

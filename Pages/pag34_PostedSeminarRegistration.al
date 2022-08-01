@@ -39,10 +39,10 @@ page 50134 "CSD Posted Seminar Reg."
                 field("Document Date"; Rec."Document Date")
                 {
                 }
-                field(Status; Rec.Status)
+                field("Status"; Rec."Status")
                 {
                 }
-                field(Duration; Rec.Duration)
+                field("Duration"; Rec."Duration")
                 {
                 }
                 field("Minimum Participants"; Rec."Minimum Participants")

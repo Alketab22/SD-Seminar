@@ -14,7 +14,7 @@ page 50135 "CSD Post Seminar Reg. Subpage"
     {
         area(content)
         {
-            repeater(Group)
+            repeater("Group")
             {
                 field("Bill-to Customer No."; Rec."Bill-to Customer No.")
                 {
@@ -25,7 +25,7 @@ page 50135 "CSD Post Seminar Reg. Subpage"
                 field("Participant Name"; Rec."Participant Name")
                 {
                 }
-                field(Participated; Rec.Participated)
+                field("Participated"; Rec."Participated")
                 {
                 }
                 field("Registration Date"; Rec."Registration Date")
@@ -37,7 +37,7 @@ page 50135 "CSD Post Seminar Reg. Subpage"
                 field("To Invoice"; Rec."To Invoice")
                 {
                 }
-                field(Registered; Rec.Registered)
+                field("Registered"; Rec."Registered")
                 {
                 }
                 field("Seminar Price"; Rec."Seminar Price")
@@ -49,7 +49,7 @@ page 50135 "CSD Post Seminar Reg. Subpage"
                 field("Line Discount Amount"; Rec."Line Discount Amount")
                 {
                 }
-                field(Amount; Rec.Amount)
+                field("Amount"; Rec."Amount")
                 {
                 }
             }

@@ -18,7 +18,7 @@ page 50117 "CSD Seminar Details FactBox"
             {
                 ApplicationArea = all;
             }
-            field(Name; Rec.Name)
+            field("Name"; Rec."Name")
             {
                 ApplicationArea = all;
             }

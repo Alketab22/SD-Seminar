@@ -53,7 +53,7 @@ page 50110 "CSD Seminar Registration"
                 {
                     ApplicationArea = all;
                 }
-                field(Status; Rec.Status)
+                field("Status"; Rec."Status")
                 {
                     ApplicationArea = all;
                 }

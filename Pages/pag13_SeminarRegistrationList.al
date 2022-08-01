@@ -16,7 +16,7 @@ page 50113 "CSD Seminar Registration List"
     {
         area(content)
         {
-            repeater(Group)
+            repeater("Group")
             {
                 field("No."; Rec."No.")
                 {
@@ -34,7 +34,7 @@ page 50113 "CSD Seminar Registration List"
                 {
                     ApplicationArea = all;
                 }
-                field(Status; Rec.Status)
+                field("Status"; Rec."Status")
                 {
                     ApplicationArea = all;
                 }

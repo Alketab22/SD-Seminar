@@ -14,17 +14,17 @@ page 50124 "CSD Seminar Charges"
     {
         area(content)
         {
-            repeater(Group)
+            repeater("Group")
             {
                 field("No."; Rec."No.")
                 {
                     ApplicationArea = all;
                 }
-                field(Description; Rec.Description)
+                field("Description"; Rec."Description")
                 {
                     ApplicationArea = all;
                 }
-                field(Quantity; Rec.Quantity)
+                field("Quantity"; Rec."Quantity")
                 {
                     ApplicationArea = all;
                 }

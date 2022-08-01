@@ -39,7 +39,7 @@ page 50121 "CSD Seminar Ledger Entries"
                     Caption = 'Seminar No.';
                     ApplicationArea = all;
                 }
-                field(Description; Rec.Description)
+                field("Description"; Rec."Description")
                 {
                     Caption = 'Description';
                     ApplicationArea = all;
@@ -54,12 +54,12 @@ page 50121 "CSD Seminar Ledger Entries"
                     Caption = 'Charge Type';
                     ApplicationArea = all;
                 }
-                field(Type; Rec.Type)
+                field("Type"; Rec."Type")
                 {
                     Caption = 'Type';
                     ApplicationArea = all;
                 }
-                field(Quantity; Rec.Quantity)
+                field("Quantity"; Rec."Quantity")
                 {
                     Caption = 'Quantity';
                     ApplicationArea = all;
@@ -74,7 +74,7 @@ page 50121 "CSD Seminar Ledger Entries"
                     Caption = 'Total Price';
                     ApplicationArea = all;
                 }
-                field(Chargeable; Rec.Chargeable)
+                field("Chargeable"; Rec."Chargeable")
                 {
                     Caption = 'Chargeable';
                     ApplicationArea = all;
