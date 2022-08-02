@@ -6,7 +6,7 @@ table 50103 "CSD Seminar Comment Line"
 
     fields
     {
-        field(10; "Table Name"; Enum "Table Namee")
+        field(10; "Table Name"; Enum "Tables")
         {
             Caption = 'Table Name';
 

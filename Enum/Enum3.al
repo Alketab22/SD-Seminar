@@ -1,4 +1,4 @@
-enum 50103 "Table Namee"
+enum 50103 "Tables"
 {
     Extensible = true;
 
