@@ -72,35 +72,35 @@ codeunit 50100 "CSD Seminar-Post"
 
     local procedure PostResJnlLine(Resource: Record Resource): Integer;
     begin
-        with SeminarRegHeader do begin
-            ResJnlLine.Init();
-            ResJnlLine."Entry Type" := ResJnlLine."Entry Type"::Usage;
-            ResJnlLine."Document No." := PstdSeminarRegHeader."No.";
-            ResJnlLine."Resource No." := Resource."No.";
-            ResJnlLine."Posting Date" := "Posting Date";
-            ResJnlLine."Reason Code" := "Reason Code";
-            ResJnlLine.Description := "Seminar Name";
-            ResJnlLine."Gen. Prod. Posting Group" :=
-            "Gen. Prod. Posting Group";
-            ResJnlLine."Posting No. Series" := "Posting No. Series";
-            ResJnlLine."Source Code" := SourceCode;
-            ResJnlLine."Resource No." := Resource."No.";
-            ResJnlLine."Unit of Measure Code" :=
-            Resource."Base Unit of Measure";
-            ResJnlLine."Unit Cost" := Resource."Unit Cost";
-            ResJnlLine."Qty. per Unit of Measure" := 1;
-            ResJnlLine.Quantity := Duration *
-            Resource."CSD Quantity Per Day";
-            ResJnlLine."Total Cost" := ResJnlLine."Unit Cost" *
-            ResJnlLine.Quantity;
-            ResJnlLine."CSD Seminar No." := "Seminar No.";
-            ResJnlLine."CSD Seminar Registration No." :=
-            PstdSeminarRegHeader."No.";
-            ResJnlPostLine.RunWithCheck(ResJnlLine);
-            ResLedgEntry.FindLast;
-            exit(ResLedgEntry."Entry No.");
-        end;
+
+        ResJnlLine.Init();
+        ResJnlLine."Entry Type" := ResJnlLine."Entry Type"::Usage;
+        ResJnlLine."Document No." := PstdSeminarRegHeader."No.";
+        ResJnlLine."Resource No." := Resource."No.";
+        ResJnlLine."Posting Date" := SeminarRegHeader."Posting Date";
+        ResJnlLine."Reason Code" := SeminarRegHeader."Reason Code";
+        ResJnlLine.Description := SeminarRegHeader."Seminar Name";
+        ResJnlLine."Gen. Prod. Posting Group" :=
+        SeminarRegHeader."Gen. Prod. Posting Group";
+        ResJnlLine."Posting No. Series" := SeminarRegHeader."Posting No. Series";
+        ResJnlLine."Source Code" := SourceCode;
+        ResJnlLine."Resource No." := Resource."No.";
+        ResJnlLine."Unit of Measure Code" :=
+        Resource."Base Unit of Measure";
+        ResJnlLine."Unit Cost" := Resource."Unit Cost";
+        ResJnlLine."Qty. per Unit of Measure" := 1;
+        ResJnlLine.Quantity := SeminarRegHeader.Duration *
+        Resource."CSD Quantity Per Day";
+        ResJnlLine."Total Cost" := ResJnlLine."Unit Cost" *
+        ResJnlLine.Quantity;
+        ResJnlLine."CSD Seminar No." := SeminarRegHeader."Seminar No.";
+        ResJnlLine."CSD Seminar Registration No." :=
+        PstdSeminarRegHeader."No.";
+        ResJnlPostLine.RunWithCheck(ResJnlLine);
+        ResLedgEntry.FindLast;
+        exit(ResLedgEntry."Entry No.");
     end;
+
 
     local procedure PostSeminarJnlLine(ChargeType: Option Instructor,Room,Participant,Charge);
     begin
