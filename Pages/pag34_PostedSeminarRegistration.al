@@ -127,9 +127,10 @@ page 50134 "CSD Posted Seminar Reg."
                 {
                     Caption = 'Co&mments';
                     Image = Comment;
-                    RunObject = Page 50108;
+                    RunObject = page 50108;
                     RunPageLink = "No." = Field("No.");
                     RunPageView = where("Document Type" = const("Posted Seminar Registration"));
+
                 }
                 action("&Charges")
                 {
