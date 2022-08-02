@@ -42,7 +42,7 @@ codeunit 50100 "CSD Seminar-Post"
         Text007: Label 'The dimensions used in %1 are invalid. %2';
         Text008: Label 'The dimensions used in %1, line no. %2 are invalid. %3';
 
-    local procedure CopyCommentLines(FromDocumentType: Integer; ToDocumentType: Integer; FromNumber: Code[20]; ToNumber: Code[20]);
+    local procedure CopyCommentLines(FromDocumentType: Integer; ToDocumentType: Enum Tables; FromNumber: Code[20]; ToNumber: Code[20]);
     begin
         SeminarCommentLine.Reset;
         SeminarCommentLine.SetRange("Table Name",
