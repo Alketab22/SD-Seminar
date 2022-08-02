@@ -19,10 +19,10 @@ page 50138 "CSD Posted Seminar Charges"
                 field("No."; Rec."No.")
                 {
                 }
-                field(Description; Rec.Description)
+                field("Description"; Rec."Description")
                 {
                 }
-                field(Quantity; Rec.Quantity)
+                field("Quantity"; Rec."Quantity")
                 {
                 }
                 field("Unit of Measure Code"; Rec."Unit of Measure Code")

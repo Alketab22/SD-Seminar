@@ -40,9 +40,10 @@ codeunit 50132 "CSD Seminar Jnl.-Post Line"
                     SeminarRegister."User ID" := USERID;
                     SeminarRegister.Insert;
                 end;
+
+                SeminarRegister."To Entry No." := NextEntryNo;
+                SeminarRegister.Modify;
             end;
-            SeminarRegister."To Entry No." := NextEntryNo;
-            SeminarRegister.Modify;
             SeminarLedgerEntry.Quantity := Quantity;
             SeminarLedgerEntry."Unit Price" := "Unit Price";
             SeminarLedgerEntry."Total Price" := "Total Price";

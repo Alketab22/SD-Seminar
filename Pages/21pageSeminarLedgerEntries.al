@@ -118,11 +118,11 @@ page 50121 "CSD Seminar Ledger Entries"
         }
         area(Factboxes)
         {
-            systempart(Links; Links)
+            systempart("Links"; Links)
             {
                 ApplicationArea = all;
             }
-            systempart(Notes; Notes)
+            systempart("Notes"; Notes)
             {
                 ApplicationArea = all;
             }

@@ -78,6 +78,9 @@ page 50136 "CSD Posted Seminar Reg. List"
                     Image = Costs;
                     RunObject = Page 50138;
                     RunPageLink = "Document No." = Field("No.");
+
+
+                    
                 }
             }
         }

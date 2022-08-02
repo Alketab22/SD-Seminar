@@ -44,11 +44,11 @@ page 50122 "CSD Seminar Registers"
 
         area(Factboxes)
         {
-            systempart(Links; Links)
+            systempart("Links"; Links)
             {
 
             }
-            systempart(Notes; Notes)
+            systempart("Notes"; Notes)
             {
 
             }
