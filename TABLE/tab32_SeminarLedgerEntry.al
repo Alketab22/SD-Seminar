@@ -115,7 +115,6 @@ table 50132 "CSD Seminar Ledger Entry"
         field(23; "Source No."; Code[20])
         {
             Caption = 'Source No.';
-            // TableRelation = if (Source Type=const(Seminar)) "CSD Seminar";
             TableRelation = if ("Source Type" = const(Seminar)) "CSD Seminar";
         }
         field(24; "Journal Batch Name"; Code[10])
@@ -150,7 +149,7 @@ table 50132 "CSD Seminar Ledger Entry"
                  usermgt.LookupUserID("User Id");
              end;
              koment ?????
- */ 
+ */
 
         }
     }
