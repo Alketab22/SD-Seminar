@@ -1,5 +1,6 @@
 codeunit 50139 "CSD EventSubscriptions"
 {
+
     [EventSubscriber(ObjectType::Codeunit, 212, 'OnBeforeResLedgEntryInsert', '', true, true)]
     local procedure PostResJnlLineOnBeforeResLedgEntryInsert
    (var
@@ -10,7 +11,6 @@ codeunit 50139 "CSD EventSubscriptions"
         ResLedgerEntry."CSD Seminar Registration No." := ResJournalLine."CSD Seminar Registration No."
 
     end;
-
 
 }
 

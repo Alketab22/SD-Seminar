@@ -1,8 +1,8 @@
-enum 50108 "Account"
+enum 50121 "Account"
 {
     Extensible = true;
 
-    value(0; " Resource")
+    value(0; "Resource")
     {
         Caption = 'Resource';
     }

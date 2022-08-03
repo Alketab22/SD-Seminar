@@ -3,7 +3,7 @@ codeunit 50132 "CSD Seminar Jnl.-Post Line"
     TableNo = "CSD Seminar Journal Line";
     trigger OnRun()
     begin
-
+RunWithCheck(SeminarJnLine);
     end;
 
     var

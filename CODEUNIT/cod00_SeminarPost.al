@@ -104,10 +104,65 @@ codeunit 50100 "CSD Seminar-Post"
 
     local procedure PostSeminarJnlLine(ChargeType: Option Instructor,Room,Participant,Charge);
     begin
+        //with SeminarRegHeader do begin
+        SeminarJnlLine.Init();
+        SeminarJnlLine."Seminar No." := SeminarRegHeader."Seminar No.";
+        SeminarJnlLine."Posting Date" := SeminarRegHeader."Posting Date";
+        SeminarJnlLine."Document Date" := SeminarRegHeader."Document Date";
+        SeminarJnlLine."Document No." := PstdSeminarRegLine."Document No.";
+        SeminarJnlLine."Charge Type" := ChargeType;
+        SeminarJnlLine."Instructor Resource No." := SeminarRegHeader."Instructor Resource No.";
+        SeminarJnlLine."Starting Date" := SeminarRegHeader."Starting Date";
+        SeminarJnlLine."Seminar Registration No." := PstdSeminarRegHeader."No.";
+        SeminarJnlLine."Room Resource No." := SeminarRegHeader."Room Resource No.";
+        SeminarJnlLine."Source Type" := SeminarJnlLine."Source Type"::Seminar;
+        SeminarJnlLine."Source Code" := SourceCode;
+        SeminarJnlLine."Reason Code" := SeminarRegHeader."Reason Code";
+        SeminarJnlLine."Posting No. Series" := SeminarRegHeader."Posting No. Series";
+        case ChargeType of
+            ChargeType::Instructor:
+                begin
+                    Instructor.get(SeminarRegHeader."Instructor Resource No.");
+                    SeminarJnlLine.Description := Instructor.Name;
+                    SeminarJnlLine.Type := SeminarJnlLine.Type::Resource;
+                    SeminarJnlLine.Chargeable := false;
+                    SeminarJnlLine.Quantity := SeminarRegHeader.Duration;
+                    SeminarJnlLine."Res. Ledger Entry No." := PostResJnlLine(Instructor);
+
+                end;
+            ChargeType::Room:
+                begin
+                    Room.get(SeminarRegHeader."Room Resource No.");
+                    SeminarJnlLine.Description := Room.Name;
+                    SeminarJnlLine.Type := SeminarJnlLine.Type::Resource;
+                    SeminarJnlLine.Chargeable := false;
+                    SeminarJnlLine.Quantity := SeminarRegHeader.Duration;
+                    // Post to resource ledger
+                    SeminarJnlLine."Res. Ledger Entry No." := PostResJnlLine(Room);
+                end;
+            ChargeType::Participant:
+                begin
+                    SeminarJnlLine."Bill-to Customer No." := PstdSeminarRegLine."Bill-to Customer No.";
+                    SeminarJnlLine."Participant Contact No." := PstdSeminarRegLine."Participant Contact No.";
+                    SeminarJnlLine."Participant Name" := PstdSeminarRegLine."Participant Name";
+                    SeminarJnlLine.Description := SeminarJnlLine."Participant Name";
+                    SeminarJnlLine.Chargeable := false;
+                    SeminarJnlLine."Unit Price" := SeminarRegLine.Amount;
+                    SeminarJnlLine."Total Price" := SeminarRegLine.Amount;
+                end;
+            ChargeType::Charge:
+                begin
+                    SeminarJnlLine.Description := SeminarJnlLine.Description;
+                    SeminarJnlLine."Bill-to Customer No." := SeminarJnlLine."Bill-to Customer No.";
+                    SeminarJnlLine.Type := SeminarJnlLine.Type;
+                    SeminarJnlLine.Quantity := SeminarJnlLine.Quantity;
+                    SeminarJnlLine."Unit Price" := SeminarJnlLine."Unit Price";
+                    SeminarJnlLine."Total Price" := SeminarJnlLine."Total Price";
+                    SeminarJnlLine.Chargeable := SeminarCharge."To Invoice";
+                end;
+        end;
+        SeminarJnlPostLine.RunWithCheck(SeminarJnlLine);
     end;
 
-    local procedure PostCharges();
-    begin
-    end;
 }
 

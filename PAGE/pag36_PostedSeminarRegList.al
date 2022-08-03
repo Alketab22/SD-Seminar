@@ -70,7 +70,7 @@ page 50136 "CSD Posted Seminar Reg. List"
                     Image = Comment;
                     RunObject = Page 50108;
                     RunPageLink = "No." = Field("No.");
-                    RunPageView = where("Document Type" = const("Posted Seminar Registration"));
+                    RunPageView = where("Table Name" = const("Posted Seminar Reg. Header"));
                 }
                 action("&Charges")
                 {
@@ -80,7 +80,7 @@ page 50136 "CSD Posted Seminar Reg. List"
                     RunPageLink = "Document No." = Field("No.");
 
 
-                    
+
                 }
             }
         }
