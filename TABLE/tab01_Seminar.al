@@ -1,4 +1,4 @@
-table 50100 "CSD Seminar"
+table 50101 "CSD Seminar"
 {
     LookupPageID = "CSD Seminar List";
     DrillDownPageID = "CSD Seminar List";

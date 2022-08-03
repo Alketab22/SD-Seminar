@@ -9,6 +9,8 @@ page 50136 "CSD Posted Seminar Reg. List"
     Editable = false;
     PageType = List;
     SourceTable = 50118;
+    ApplicationArea = all;
+    UsageCategory = Lists;
 
     layout
     {
@@ -68,7 +70,7 @@ page 50136 "CSD Posted Seminar Reg. List"
                 {
                     Caption = 'Co&mments';
                     Image = Comment;
-                    RunObject = Page 50108;
+                    RunObject = Page 50106;
                     RunPageLink = "No." = Field("No.");
                     RunPageView = where("Table Name" = const("Posted Seminar Reg. Header"));
                 }

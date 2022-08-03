@@ -1,4 +1,4 @@
-page 50106 "CSD Seminar Card"
+page 50101 "CSD Seminar Card"
 {
 
     PageType = Card;

@@ -1,12 +1,13 @@
-pageextension 50103 "CSD ResourceListExt" extends "Resource List"
+pageextension 50101 "CSD ResourceListExt" extends "Resource List"
 {
 
     layout
     {
-    
-     modify("Type"){
-        Visible=ShowType;
-     }
+
+        modify("Type")
+        {
+            Visible = ShowType;
+        }
         addafter("Type")
         {
             field("CSD Resource Type"; xRec."CSD Resource Type")

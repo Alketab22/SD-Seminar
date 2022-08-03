@@ -1,4 +1,4 @@
-page 50105 "CSD Seminar Setup"
+page 50100 "CSD Seminar Setup"
 {
     PageType = Card;
     Caption = 'Seminar Setup';

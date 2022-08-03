@@ -1,4 +1,4 @@
-enum 50109 "CSD Resource Type"
+enum 50108 "CSD Resource Type"
 {
     Extensible = true;
 

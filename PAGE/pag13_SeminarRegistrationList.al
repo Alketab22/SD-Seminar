@@ -79,7 +79,7 @@ page 50113 "CSD Seminar Registration List"
 
                     Caption = 'Co&mments';
                     Image = Comment;
-                    RunObject = Page 50108;
+                    RunObject = Page 50106;
                     RunPageLink = "No." = field("No.");
                     RunPageView = where("Table Name" = const("Seminar Registration Header"));
 
