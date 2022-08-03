@@ -9,6 +9,7 @@ page 50134 "CSD Posted Seminar Reg."
     PageType = Document;
     SourceTable = 50118;
 
+
     layout
     {
         area(content)

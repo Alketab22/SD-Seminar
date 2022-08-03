@@ -42,6 +42,7 @@ codeunit 50100 "CSD Seminar-Post"
             PstdSeminarRegHeader.Insert;
             Window.Update(1, StrSubstNo(Text004, "No.", PstdSeminarRegHeader."No."));
             CopyCommentLines(
+            //SeminarCommentLine."Table Name"::"Seminar Registration Header",
             SeminarCommentLine."Table Name"::"Seminar Registration Header",
             SeminarCommentLine."Table Name"::"Posted Seminar Reg. Header", "No.", PstdSeminarRegHeader."No.");
             CopyCharges("No.", PstdSeminarRegHeader."No.");
