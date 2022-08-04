@@ -7,7 +7,7 @@ page 50117 "CSD Seminar Details FactBox"
     Caption = 'Seminar Details';
     PageType = CardPart;
     SourceTable = "CSD Seminar";
-    ApplicationArea = all;
+    // ApplicationArea = all;
     UsageCategory = Administration;
 
     layout

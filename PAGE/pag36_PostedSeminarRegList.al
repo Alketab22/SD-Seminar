@@ -20,27 +20,35 @@ page 50136 "CSD Posted Seminar Reg. List"
             {
                 field("No."; Rec."No.")
                 {
+                    ApplicationArea = all;
                 }
                 field("Starting Date"; Rec."Starting Date")
                 {
+                    ApplicationArea = all;
                 }
                 field("Seminar No."; Rec."Seminar No.")
                 {
+                    ApplicationArea = all;
                 }
                 field("Seminar Name"; Rec."Seminar Name")
                 {
+                    ApplicationArea = all;
                 }
                 field("Status"; Rec."Status")
                 {
+                    ApplicationArea = all;
                 }
                 field("Duration"; Rec."Duration")
                 {
+                    ApplicationArea = all;
                 }
                 field("Maximum Participants"; Rec."Maximum Participants")
                 {
+                    ApplicationArea = all;
                 }
                 field("Room Resource No."; Rec."Room Resource No.")
                 {
+                    ApplicationArea = all;
                 }
             }
         }
@@ -49,12 +57,15 @@ page 50136 "CSD Posted Seminar Reg. List"
             part("50117"; 50117)
             {
                 SubPageLink = "No." = Field("Seminar No.");
+                ApplicationArea = all;
             }
             systempart("Links"; Links)
             {
+                ApplicationArea = all;
             }
             systempart("Notes"; Notes)
             {
+                ApplicationArea = all;
             }
         }
     }
@@ -73,6 +84,7 @@ page 50136 "CSD Posted Seminar Reg. List"
                     RunObject = Page 50106;
                     RunPageLink = "No." = Field("No.");
                     RunPageView = where("Table Name" = const("Posted Seminar Reg. Header"));
+                    ApplicationArea = all;
                 }
                 action("&Charges")
                 {
@@ -80,6 +92,7 @@ page 50136 "CSD Posted Seminar Reg. List"
                     Image = Costs;
                     RunObject = Page 50138;
                     RunPageLink = "Document No." = Field("No.");
+                    ApplicationArea = all;
 
 
 

@@ -8,6 +8,7 @@ page 50110 "CSD Seminar Registration"
     PageType = Document;
     SourceTable = "CSD Seminar Reg. Header";
     UsageCategory = Tasks;
+    ApplicationArea = all;
     layout
     {
         area(content)
