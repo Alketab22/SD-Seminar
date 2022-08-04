@@ -38,15 +38,15 @@ codeunit 50139 "CSD EventSubscriptions"
             DocumentEntry.Init();
             DocumentEntry."Entry No." := NextEntryNo;
             DocumentEntry."Table ID" := Database::"CSD Posted Seminar Reg. Header";
-            DocumentEntry."Document Type" := 0;
+            DocumentEntry."Document Type" := "Document Entry Document Type"::Quote;
             DocumentEntry."Table Name" := CopyStr(PostedSeminarRegistrationHeader.TableCaption, 1, MaxStrLen(DocumentEntry."Table Name"));
             DocumentEntry."No. of Records" := DocNoOfRec;
             DocumentEntry.Insert();
         end;
     end;
 
-    /////////////////////////////////////////////////
-    /// /////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
+
     [EventSubscriber(ObjectType::Page, 344, 'OnAfterNavigateShowRecords', '', true, true)]
     local procedure ExtendNavigateOnAfterNavigateShowRecords
         (TableID: Integer;
