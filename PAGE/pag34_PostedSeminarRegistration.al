@@ -179,6 +179,7 @@ page 50134 "CSD Posted Seminar Reg."
         {
             action("&Navigate")
             {
+                ApplicationArea = all;
                 trigger OnAction()
                 var
                     Navigate: Page Navigate;
