@@ -1,1 +1,1 @@
-﻿{"Added":[],"Modified":[{"Id":50134,"Kind":12,"Name":"CSD Posted Seminar Reg.","PackagePath":"/src/PAGE/pag34_PostedSeminarRegistration.al"},{"Id":50100,"Kind":11,"Name":"CSD Seminar-Post","PackagePath":"/src/CODEUNIT/cod00_SeminarPost.al"},{"Id":50132,"Kind":10,"Name":"CSD Seminar Ledger Entry","PackagePath":"/src/TABLE/tab32_SeminarLedgerEntry.al"},{"Id":50132,"Kind":11,"Name":"CSD Seminar Jnl.-Post Line","PackagePath":"/src/Codeunits/cod32_SeminarJnlPostLine.al"}],"Removed":[]}
+﻿{"Added":[],"Modified":[],"Removed":[]}

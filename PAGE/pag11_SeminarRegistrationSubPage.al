@@ -8,7 +8,7 @@ page 50111 "CSD Seminar Reg. Subpage"
     DelayedInsert = true;
     PageType = ListPart;
     SourceTable = "CSD Seminar Registration Line";
-    UsageCategory = Lists;
+    // UsageCategory = Lists;
     AutoSplitKey = true;
     layout
     {

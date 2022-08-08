@@ -4,7 +4,7 @@ page 50101 "CSD Seminar Card"
     PageType = Card;
     Caption = 'Seminar Card';
     SourceTable = "CSD Seminar";
-    UsageCategory = Lists;
+    //UsageCategory = Lists;
     layout
     {
         area(Content)
@@ -135,6 +135,7 @@ page 50101 "CSD Seminar Card"
                 Image = NewTimesheet;
                 Promoted = true;
                 PromotedCategory = New;
+                ApplicationArea = all;
             }
         }
     }
