@@ -10,7 +10,7 @@ page 50121 "CSD Seminar Ledger Entries"
     {
         area(Content)
         {
-            repeater(Group)
+            repeater("Group")
             {
 
                 field("Posting Date"; Rec."Posting Date")
