@@ -11,52 +11,6 @@
       <rd:DataSourceID>17cab712-dd52-4ff0-bfb4-3813e8630722</rd:DataSourceID>
     </DataSource>
   </DataSources>
-  <DataSets>
-    <DataSet Name="DataSet_Result">
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <CommandText />
-      </Query>
-      <Fields>
-        <Field Name="No_">
-          <DataField>No_</DataField>
-        </Field>
-        <Field Name="Seminar_No_">
-          <DataField>Seminar_No_</DataField>
-        </Field>
-        <Field Name="Seminar_Name">
-          <DataField>Seminar_Name</DataField>
-        </Field>
-        <Field Name="Starting_Date">
-          <DataField>Starting_Date</DataField>
-        </Field>
-        <Field Name="Duration_">
-          <DataField>Duration_</DataField>
-        </Field>
-        <Field Name="Duration_Format">
-          <DataField>Duration_Format</DataField>
-        </Field>
-        <Field Name="Instructor_Name">
-          <DataField>Instructor_Name</DataField>
-        </Field>
-        <Field Name="Room_Name">
-          <DataField>Room_Name</DataField>
-        </Field>
-        <Field Name="Bill_to_Customer_No_">
-          <DataField>Bill_to_Customer_No_</DataField>
-        </Field>
-        <Field Name="Participant_Contact_No_">
-          <DataField>Participant_Contact_No_</DataField>
-        </Field>
-        <Field Name="Participant_Name">
-          <DataField>Participant_Name</DataField>
-        </Field>
-        <Field Name="Company_Name">
-          <DataField>Company_Name</DataField>
-        </Field>
-      </Fields>
-    </DataSet>
-  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -1004,7 +958,7 @@
             </Filters>
             <Top>0.43055in</Top>
             <Left>0.23833in</Left>
-            <Height>5.95137in</Height>
+            <Height>5.95139in</Height>
             <Width>8.29167in</Width>
             <Style>
               <Border>
@@ -1064,7 +1018,23 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Globals!ExecutionTime</Value>
+                      <Value>Globals!</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontFamily>Times New Roman</FontFamily>
+                        <FontSize>12pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                        <TextDecoration>None</TextDecoration>
+                        <Color>#000000</Color>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>ExecutionTime</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Times New Roman</FontFamily>
@@ -1138,7 +1108,23 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>User!UserID</Value>
+                      <Value>User!</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontFamily>Times New Roman</FontFamily>
+                        <FontSize>12pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                        <TextDecoration>None</TextDecoration>
+                        <Color>#000000</Color>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>UserID</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Times New Roman</FontFamily>
@@ -1309,11 +1295,20 @@
       </DefaultValue>
       <Prompt>Participant_NameCaption</Prompt>
     </ReportParameter>
+    <ReportParameter Name="Company_NameCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Company_NameCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Company_NameCaption</Prompt>
+    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
       <NumberOfColumns>1</NumberOfColumns>
-      <NumberOfRows>11</NumberOfRows>
+      <NumberOfRows>12</NumberOfRows>
       <CellDefinitions>
         <CellDefinition>
           <ColumnIndex>0</ColumnIndex>
@@ -1370,6 +1365,11 @@
           <RowIndex>10</RowIndex>
           <ParameterName>Participant_NameCaption</ParameterName>
         </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>11</RowIndex>
+          <ParameterName>Company_NameCaption</ParameterName>
+        </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>
   </ReportParametersLayout>
@@ -1412,4 +1412,50 @@ End Function
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
   <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="No_">
+          <DataField>No_</DataField>
+        </Field>
+        <Field Name="Seminar_No_">
+          <DataField>Seminar_No_</DataField>
+        </Field>
+        <Field Name="Seminar_Name">
+          <DataField>Seminar_Name</DataField>
+        </Field>
+        <Field Name="Starting_Date">
+          <DataField>Starting_Date</DataField>
+        </Field>
+        <Field Name="Duration_">
+          <DataField>Duration_</DataField>
+        </Field>
+        <Field Name="Duration_Format">
+          <DataField>Duration_Format</DataField>
+        </Field>
+        <Field Name="Instructor_Name">
+          <DataField>Instructor_Name</DataField>
+        </Field>
+        <Field Name="Room_Name">
+          <DataField>Room_Name</DataField>
+        </Field>
+        <Field Name="Bill_to_Customer_No_">
+          <DataField>Bill_to_Customer_No_</DataField>
+        </Field>
+        <Field Name="Participant_Contact_No_">
+          <DataField>Participant_Contact_No_</DataField>
+        </Field>
+        <Field Name="Participant_Name">
+          <DataField>Participant_Name</DataField>
+        </Field>
+        <Field Name="Company_Name">
+          <DataField>Company_Name</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
 </Report>

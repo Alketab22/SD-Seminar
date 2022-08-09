@@ -1,8 +1,10 @@
 report 50101 "CSD SeminarRegParticipantList"
 {
+    Caption = 'CSD Seminar Reg. Participant List';
     UsageCategory = ReportsAndAnalysis;
     ApplicationArea = All;
     RDLCLayout = './Layouts/SeminarRegParticipantList.rdl';
+    //ket layoutin e vendosim vet?
     DefaultLayout = RDLC;
 
 
@@ -66,7 +68,7 @@ report 50101 "CSD SeminarRegParticipantList"
             {
                 column(Company_Name; "Name")
                 {
-
+                    IncludeCaption = true;
                 }
 
             }

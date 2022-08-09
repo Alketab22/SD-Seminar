@@ -1473,6 +1473,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page CSD Seminar Setup - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Report 206864090 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CSD Seminar Reg. Participant List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report CSD SeminarRegParticipantList - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Report 206864090 - ReportLabel 836453982" size-unit="char" translate="yes" xml:space="preserve">
           <source>Seminar Registration List</source>
           <note from="Developer" annotates="general" priority="2"></note>
