@@ -9,8 +9,8 @@ page 50138 "CSD Posted Seminar Charges"
     Editable = false;
     PageType = List;
     SourceTable = 50121;
-    //  ApplicationArea = all;
-    //UsageCategory = Lists;
+    ApplicationArea = all;
+    UsageCategory = Lists;
 
     layout
     {

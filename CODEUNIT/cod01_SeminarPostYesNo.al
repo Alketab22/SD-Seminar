@@ -6,7 +6,7 @@ codeunit 50101 "CSD Seminar-Post (Yes/No)"
 
     trigger OnRun();
     begin
-        //copy???
+
         SeminarRegHeader.COPY(Rec);
         Code;
         Rec := SeminarRegHeader;

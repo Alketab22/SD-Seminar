@@ -35,10 +35,10 @@ table 50133 "CSD Seminar Register"
         {
             Caption = 'User ID';
             TableRelation = User."User Name";
-            //This property is currently not supported
+
             //TestTableRelation = false;
             /*
-                        trigger OnLookup();
+                         trigger OnLookup();
                         var
                             UserMgt: Codeunit "User Management";
                         begin

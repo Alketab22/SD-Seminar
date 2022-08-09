@@ -1018,23 +1018,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Globals!</Value>
-                      <Style>
-                        <FontStyle>Normal</FontStyle>
-                        <FontFamily>Times New Roman</FontFamily>
-                        <FontSize>12pt</FontSize>
-                        <FontWeight>Normal</FontWeight>
-                        <TextDecoration>None</TextDecoration>
-                        <Color>#000000</Color>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>ExecutionTime</Value>
+                      <Value>=Globals!ExecutionTime</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Times New Roman</FontFamily>
@@ -1295,20 +1279,11 @@
       </DefaultValue>
       <Prompt>Participant_NameCaption</Prompt>
     </ReportParameter>
-    <ReportParameter Name="Company_NameCaption">
-      <DataType>String</DataType>
-      <DefaultValue>
-        <Values>
-          <Value>Company_NameCaption</Value>
-        </Values>
-      </DefaultValue>
-      <Prompt>Company_NameCaption</Prompt>
-    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
       <NumberOfColumns>1</NumberOfColumns>
-      <NumberOfRows>12</NumberOfRows>
+      <NumberOfRows>11</NumberOfRows>
       <CellDefinitions>
         <CellDefinition>
           <ColumnIndex>0</ColumnIndex>
@@ -1364,11 +1339,6 @@
           <ColumnIndex>0</ColumnIndex>
           <RowIndex>10</RowIndex>
           <ParameterName>Participant_NameCaption</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>0</ColumnIndex>
-          <RowIndex>11</RowIndex>
-          <ParameterName>Company_NameCaption</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>

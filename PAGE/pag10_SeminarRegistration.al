@@ -21,7 +21,7 @@ page 50110 "CSD Seminar Registration"
                     AssistEdit = true;
                     trigger OnAssistEdit();
                     begin
-                        if xRec.AssistEdit(xRec) then
+                        if Rec.AssistEdit(Rec) then
                             CurrPage.UPDATE;
                     end;
                 }

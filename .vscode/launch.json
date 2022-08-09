@@ -5,7 +5,6 @@
             "name": "Your own server",
             "request": "launch",
             "type": "al",
-            "schemaUpdateMode": "Recreate",
             "environmentType": "OnPrem",
             "server": "http://localhost:8080/BC200/",
             "serverInstance": "BC200",

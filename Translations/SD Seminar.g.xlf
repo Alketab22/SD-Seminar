@@ -99,7 +99,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table CSD Posted Seminar Reg. Header - Field Document Date - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 3776795461 - Field 1637095154 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Decimal</source>
+          <source>Duration</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table CSD Posted Seminar Reg. Header - Field Duration - Property Caption</note>
         </trans-unit>

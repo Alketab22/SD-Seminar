@@ -46,9 +46,9 @@ table 50118 "CSD Posted Seminar Reg. Header"
             Caption = 'Status';
 
         }
-        field(8; Duration; Decimal)
+        field(8; "Duration"; Decimal)
         {
-            Caption = 'Decimal';
+            Caption = 'Duration';
             DecimalPlaces = 0 : 1;
         }
         field(9; "Maximum Participants"; Integer)

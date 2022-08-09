@@ -77,7 +77,7 @@ table 50101 "CSD Seminar"
         field(110; "Gen. Prod. Posting Group"; Code[10])
         {
             Caption = 'Gen. Prod. Posting Group';
-            TableRelation = "Gen. Business Posting Group";
+            TableRelation = "Gen. Product Posting Group";
 
             trigger OnValidate();
 

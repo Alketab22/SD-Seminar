@@ -9,6 +9,8 @@ page 50135 "CSD Post Seminar Reg. Subpage"
     DelayedInsert = true;
     PageType = ListPart;
     SourceTable = 50119;
+    ApplicationArea = all;
+    UsageCategory = Lists;
 
     layout
     {
