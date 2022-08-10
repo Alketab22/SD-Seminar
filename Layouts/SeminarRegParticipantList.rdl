@@ -1055,7 +1055,40 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Globals!PageNumber &amp; “ of “ &amp; Globals!TotalPages</Value>
+                      <Value xml:space="preserve"> </Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontFamily>Times New Roman</FontFamily>
+                        <FontSize>12pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                        <TextDecoration>None</TextDecoration>
+                        <Color>#000000</Color>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>=Globals!PageNumber</Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontFamily>Times New Roman</FontFamily>
+                        <FontSize>12pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                        <TextDecoration>None</TextDecoration>
+                        <Color>#000000</Color>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>“ of “ </Value>
+                      <Style>
+                        <FontStyle>Normal</FontStyle>
+                        <FontFamily>Times New Roman</FontFamily>
+                        <FontSize>12pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                        <TextDecoration>None</TextDecoration>
+                        <Color>#000000</Color>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>=Globals!OverallTotalPages</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Times New Roman</FontFamily>
@@ -1108,7 +1141,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>UserID</Value>
+                      <Value>=User!UserID</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Times New Roman</FontFamily>
