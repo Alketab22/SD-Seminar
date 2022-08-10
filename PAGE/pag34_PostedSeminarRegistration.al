@@ -4,10 +4,12 @@ page 50134 "CSD Posted Seminar Reg."
     //   Chapter 7 - Lab 3
     //     - Created new page
 
-    Caption = 'Seminar Registration';
+    Caption = 'Posted Seminar Registration';
     Editable = false;
     PageType = Document;
     SourceTable = 50118;
+    UsageCategory = Documents;
+    ApplicationArea = all;
 
 
     layout

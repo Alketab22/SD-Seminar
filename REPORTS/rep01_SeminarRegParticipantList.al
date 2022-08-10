@@ -68,7 +68,7 @@ report 50101 "CSD SeminarRegParticipantList"
             {
                 column(Company_Name; "Name")
                 {
-
+                    IncludeCaption = true;
                 }
 
             }

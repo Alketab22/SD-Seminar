@@ -4,7 +4,7 @@ page 50111 "CSD Seminar Reg. Subpage"
     //   Chapter 6 - Lab 3
     //     - Created new page
 
-    Caption = 'Lines';
+    Caption = 'CSD Seminar Reg. Subpage';
     DelayedInsert = true;
     PageType = ListPart;
     SourceTable = "CSD Seminar Registration Line";

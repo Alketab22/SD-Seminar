@@ -19,18 +19,18 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>2.71181in</Width>
+                  <Width>2.05209in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>3.12847in</Width>
+                  <Width>2.46875in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.45139in</Width>
+                  <Width>1.79167in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>0.63696in</Height>
+                  <Height>0.51312in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -127,7 +127,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.63696in</Height>
+                  <Height>0.51312in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -224,7 +224,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.63696in</Height>
+                  <Height>0.51312in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -321,7 +321,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.63696in</Height>
+                  <Height>0.51312in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -418,7 +418,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.63696in</Height>
+                  <Height>0.51312in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -515,7 +515,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.63696in</Height>
+                  <Height>0.51312in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -612,7 +612,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.63696in</Height>
+                  <Height>0.51312in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -709,7 +709,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.73592in</Height>
+                  <Height>0.61208in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -812,7 +812,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.75675in</Height>
+                  <Height>0.63291in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -956,10 +956,10 @@
                 </FilterValues>
               </Filter>
             </Filters>
-            <Top>0.43055in</Top>
-            <Left>0.23833in</Left>
-            <Height>5.95139in</Height>
-            <Width>8.29167in</Width>
+            <Top>0.79513in</Top>
+            <Left>1.04041in</Left>
+            <Height>4.83683in</Height>
+            <Width>6.31251in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1171,36 +1171,6 @@
                 <PaddingBottom>2pt</PaddingBottom>
               </Style>
             </Textbox>
-            <Textbox Name="Company_Name">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>=Last(Fields!Company_Name.Value, “DataSet_Result”)</Value>
-                      <Style />
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Company_Name</rd:DefaultName>
-              <Top>0.97792in</Top>
-              <Left>0.23833in</Left>
-              <Height>0.25in</Height>
-              <Width>1in</Width>
-              <ZIndex>4</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
           </ReportItems>
           <Style>
             <Border>
@@ -1312,11 +1282,20 @@
       </DefaultValue>
       <Prompt>Participant_NameCaption</Prompt>
     </ReportParameter>
+    <ReportParameter Name="Company_NameCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Company_NameCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Company_NameCaption</Prompt>
+    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
       <NumberOfColumns>1</NumberOfColumns>
-      <NumberOfRows>11</NumberOfRows>
+      <NumberOfRows>12</NumberOfRows>
       <CellDefinitions>
         <CellDefinition>
           <ColumnIndex>0</ColumnIndex>
@@ -1372,6 +1351,11 @@
           <ColumnIndex>0</ColumnIndex>
           <RowIndex>10</RowIndex>
           <ParameterName>Participant_NameCaption</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>11</RowIndex>
+          <ParameterName>Company_NameCaption</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>
