@@ -165,7 +165,7 @@ codeunit 50100 "CSD Seminar-Post"
         ResJnlLine.Quantity;
         ResJnlLine."CSD Seminar No." := SeminarRegHeader."Seminar No.";
         ResJnlLine."CSD Seminar Registration No." :=
-        SeminarRegHeader."No.";
+        PstdSeminarRegHeader."No.";
         ResJnlPostLine.RunWithCheck(ResJnlLine);
         ResLedgEntry.FindLast;
         exit(ResLedgEntry."Entry No.");
@@ -186,6 +186,7 @@ codeunit 50100 "CSD Seminar-Post"
         SeminarJnlLine."Seminar Registration No." := PstdSeminarRegHeader."No.";
         SeminarJnlLine."Room Resource No." := SeminarRegHeader."Room Resource No.";
         SeminarJnlLine."Source Type" := SeminarJnlLine."Source Type"::Seminar;
+        SeminarJnlLine."Source No." := SeminarRegHeader."Seminar No.";
         SeminarJnlLine."Source Code" := SourceCode;
         SeminarJnlLine."Reason Code" := SeminarRegHeader."Reason Code";
         SeminarJnlLine."Posting No. Series" := SeminarRegHeader."Posting No. Series";
@@ -194,7 +195,7 @@ codeunit 50100 "CSD Seminar-Post"
                 begin
                     Instructor.get(SeminarRegHeader."Instructor Resource No.");
                     SeminarJnlLine.Description := Instructor.Name;
-                    SeminarJnlLine.Type := SeminarJnlLine.Type;
+                    SeminarJnlLine.Type := SeminarJnlLine.Type::Resource;
                     SeminarJnlLine.Chargeable := false;
                     SeminarJnlLine.Quantity := SeminarRegHeader.Duration;
                     SeminarJnlLine."Res. Ledger Entry No." := PostResJnlLine(Instructor);

@@ -224,7 +224,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table CSD Posted Seminar Reg. Header - Field Status - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 3776795461 - Field 3776794752 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Posting No.</source>
+          <source>User Id</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table CSD Posted Seminar Reg. Header - Field User Id - Property Caption</note>
         </trans-unit>
@@ -1169,7 +1169,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit CSD Seminar-Post (Yes/No) - NamedType Text001</note>
         </trans-unit>
         <trans-unit id="Page 1014107342 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Post Seminar Reg. Subpage</source>
+          <source>Lines</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page CSD Post Seminar Reg. Subpage - Property Caption</note>
         </trans-unit>

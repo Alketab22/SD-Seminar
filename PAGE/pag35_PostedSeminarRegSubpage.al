@@ -5,7 +5,7 @@ page 50135 "CSD Post Seminar Reg. Subpage"
     //     - Created new page
 
     AutoSplitKey = true;
-    Caption = 'Post Seminar Reg. Subpage';
+    Caption = 'Lines';
     DelayedInsert = true;
     PageType = ListPart;
     SourceTable = 50119;
