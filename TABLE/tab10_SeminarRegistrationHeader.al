@@ -217,11 +217,11 @@ table 50110 "CSD Seminar Reg. Header"
             TableRelation = "VAT Product Posting Group".Code;
             Caption = 'VAT Prod. Posting Group';
         }
-        field(22; "Comment"; Text[100])
+        field(22; "Comment"; Boolean)
 
         {
             Caption = 'Comment';
-            CalcFormula = lookup(Resource.Name where("No." = field("Instructor Resource No."), Type = const(Person)));
+            CalcFormula = Exist("CSD Seminar Comment Line" where("Table Name" = const("Seminar Registration Header"), "No." = Field("No.")));
             Editable = false;
             FieldClass = FlowField;
         }
@@ -256,7 +256,7 @@ table 50110 "CSD Seminar Reg. Header"
                 SeminarSetup.GET;
                 SeminarSetup.TestField("Seminar Registration Nos.");
                 SeminarSetup.TestField("Posted Seminar Reg. Nos.");
-                if NoSeriesMgt.LookupSeries(SeminarSetup."Posted Seminar Reg. Nos.", "Posting No. Series")
+                if NoSeriesMgt.LookupSeries(SeminarSetup."Posted Seminar Reg. Nos.", SeminarRegHeader."Posting No. Series")
                 then begin
                     VALIDATE("Posting No. Series");
                 end;
@@ -316,32 +316,32 @@ table 50110 "CSD Seminar Reg. Header"
 
     trigger OnDelete();
     begin
-        begin
-            if (CurrFieldNo > 0) then
-                TestField(Status, Status::Canceled);
-            SeminarRegLine.RESET;
-            SeminarRegLine.SETRANGE("Document No.", "No.");
-            SeminarRegLine.SETRANGE(Registered, true);
-            if SeminarRegLine.FIND('-') then
-                ERROR(
-                  Text001,
-                  SeminarRegLine.TableCaption,
-                  SeminarRegLine.FieldCaption(Registered),
-                  true);
-            SeminarRegLine.SETRANGE(Registered);
-            SeminarRegLine.deleteALL(true);
 
-            SeminarCharge.RESET;
-            SeminarCharge.SETRANGE("Document No.", "No.");
-            if not SeminarCharge.ISEMPTY then
-                ERROR(Text006, SeminarCharge.TableCaption);
+        if (CurrFieldNo > 0) then
+            TestField(Status, Status::Canceled);
+        SeminarRegLine.RESET;
+        SeminarRegLine.SETRANGE("Document No.", "No.");
+        SeminarRegLine.SETRANGE(Registered, true);
+        if SeminarRegLine.FIND('-') then
+            ERROR(
+              Text001,
+              SeminarRegLine.TableCaption,
+              SeminarRegLine.FieldCaption(Registered),
+              true);
+        SeminarRegLine.SETRANGE(Registered);
+        SeminarRegLine.deleteALL(true);
 
-            SeminarCommentLine.RESET;
-            SeminarCommentLine.SETRANGE("Table Name", SeminarCommentLine."Table Name"::"Seminar Registration Header");
-            SeminarCommentLine.SETRANGE("No.", "No.");
-            SeminarCommentLine.deleteALL;
-        end;
+        SeminarCharge.RESET;
+        SeminarCharge.SETRANGE("Document No.", "No.");
+        if not SeminarCharge.ISEMPTY then
+            ERROR(Text006, SeminarCharge.TableCaption);
+
+        SeminarCommentLine.RESET;
+        SeminarCommentLine.SETRANGE("Table Name", SeminarCommentLine."Table Name"::"Seminar Registration Header");
+        SeminarCommentLine.SETRANGE("No.", "No.");
+        SeminarCommentLine.deleteALL;
     end;
+
 
     trigger OnInsert();
     begin

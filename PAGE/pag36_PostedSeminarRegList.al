@@ -54,7 +54,7 @@ page 50136 "CSD Posted Seminar Reg. List"
         }
         area(factboxes)
         {
-            part("CSD Seminar Details FactBox"; "CSD Seminar Details FactBox")
+            part("CSD Seminar Details FactBox"; 50117)
             {
                 SubPageLink = "No." = Field("Seminar No.");
                 ApplicationArea = all;

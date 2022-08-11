@@ -8,8 +8,8 @@ page 50124 "CSD Seminar Charges"
     Caption = 'Seminar Charges';
     PageType = List;
     SourceTable = "CSD Seminar Charge";
-    ApplicationArea = all;
-    UsageCategory = Lists;
+    // ApplicationArea = all;
+    // UsageCategory = Lists;
     layout
     {
         area(content)

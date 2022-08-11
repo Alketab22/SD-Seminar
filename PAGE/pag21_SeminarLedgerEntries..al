@@ -1,8 +1,8 @@
 page 50121 "CSD Seminar Ledger Entries"
 {
     PageType = List;
-    // ApplicationArea = All;
-    // UsageCategory = Lists;
+    ApplicationArea = All;
+    UsageCategory = Lists;
     SourceTable = "CSD Seminar Ledger Entry";
     Caption = 'Seminar Ledger Entries';
     Editable = false;
@@ -133,17 +133,7 @@ page 50121 "CSD Seminar Ledger Entries"
     {
         area(Processing)
         {
-            /*
-            action(ActionName)
-            {
-                ApplicationArea = All;
 
-                trigger OnAction();
-                begin
-
-                end;
-            }
-            */
         }
     }
 }

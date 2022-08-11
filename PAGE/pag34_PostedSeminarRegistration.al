@@ -4,12 +4,12 @@ page 50134 "CSD Posted Seminar Reg."
     //   Chapter 7 - Lab 3
     //     - Created new page
 
-    Caption = 'Seminar Registration';
+    Caption = 'Posted Seminar Registration';
     Editable = false;
     PageType = Document;
     SourceTable = 50118;
-    UsageCategory = Documents;
-    ApplicationArea = all;
+    //UsageCategory = Documents;
+    // ApplicationArea = all;
 
 
     layout
@@ -128,7 +128,7 @@ page 50134 "CSD Posted Seminar Reg."
         }
         area(factboxes)
         {
-            part("CSD Seminar Details FactBox"; "CSD Seminar Details FactBox")
+            part("CSD Seminar Details FactBox"; 50117)
             {
                 SubPageLink = "No." = Field("Seminar No.");
                 ApplicationArea = all;
