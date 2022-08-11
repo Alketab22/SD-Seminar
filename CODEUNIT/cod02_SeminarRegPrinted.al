@@ -6,7 +6,6 @@ codeunit 50102 "CSD SeminarRegPrinted"
         Rec.Find();
         Rec."No. Printed" += 1;
         Rec.Modify();
-        //pse perdorim modify ktu?
         Commit();
     end;
 

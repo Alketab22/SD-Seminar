@@ -1,5 +1,5 @@
 codeunit 50101 "CSD Seminar-Post (Yes/No)"
-{// Yes/No??
+{
 
 
     TableNo = 50110;
