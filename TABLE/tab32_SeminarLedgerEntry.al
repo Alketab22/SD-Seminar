@@ -5,8 +5,8 @@ table 50132 "CSD Seminar Ledger Entry"
     //     - Created new table
 
     Caption = 'Seminar Ledger Entry';
-    LookupPageId = "CSD Seminar Ledger Entries";
-    DrillDownPageId = "CSD Seminar Ledger Entries";
+    LookupPageId = 50121;
+    DrillDownPageId = 50121;
 
     fields
     {
@@ -52,7 +52,7 @@ table 50132 "CSD Seminar Ledger Entry"
             Caption = 'Charge Type';
 
         }
-        field(10; Type; Enum "Account")
+        field(10; Type; Enum "Type")
         {
             Caption = 'Type';
 
@@ -89,7 +89,7 @@ table 50132 "CSD Seminar Ledger Entry"
         field(17; "Room Resource No."; Code[20])
         {
             Caption = 'Room Resource No.';
-            TableRelation = Resource where(Type = const(Machine));
+            TableRelation = Resource where("Type" = const(Machine));
         }
         field(18; "Instructor Resource No."; Code[20])
         {
@@ -144,14 +144,14 @@ table 50132 "CSD Seminar Ledger Entry"
             Caption = 'User ID';
             TableRelation = User where("User Name" = field("User ID"));
             ValidateTableRelation = false;
-            /* trigger OnLookUp();
-             var
-                 UserMgt: Codeunit "User Management";
-             begin
-                 usermgt.LookupUserID("User Id");
-             end;
-             koment ?????
- */
+            trigger OnLookUp();
+            var
+                UserMgt: Codeunit "User Management";
+            begin
+                //usermgt.LookupUserID("User Id");
+            end;
+
+
 
         }
     }

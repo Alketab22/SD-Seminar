@@ -169,7 +169,7 @@ page 50110 "CSD Seminar Registration"
                 Caption = '&Seminar Registration';
                 action("Co&mments")
                 {
-
+                    ApplicationArea = all;
                     Caption = 'Co&mments';
                     Image = Comment;
                     RunObject = Page 50106;
@@ -188,6 +188,7 @@ page 50110 "CSD Seminar Registration"
                 }
                 action("&Post")
                 {
+                    ApplicationArea = all;
                     Caption = '&Post';
                     Image = PostDocument;
                     Promoted = true;

@@ -37,12 +37,13 @@ codeunit 50139 "CSD EventSubscriptions"
                 NextEntryNo := 1;
             DocumentEntry.Init();
             DocumentEntry."Entry No." := NextEntryNo;
-            DocumentEntry."Table ID" := Database::"CSD Posted Seminar Reg. Header";
-            DocumentEntry."Document Type" := "Document Entry Document Type"::Quote;
+            DocumentEntry."Table ID" := Database::"CSD Seminar Ledger Entry";
+            DocumentEntry."Document Type" := DocumentEntry."Document Type"::Quote;
             DocumentEntry."Table Name" := CopyStr(PostedSeminarRegistrationHeader.TableCaption, 1, MaxStrLen(DocumentEntry."Table Name"));
             DocumentEntry."No. of Records" := DocNoOfRec;
             DocumentEntry.Insert();
         end;
+
     end;
 
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  

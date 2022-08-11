@@ -4,6 +4,7 @@ codeunit 50132 "CSD Seminar Jnl.-Post Line"
     trigger OnRun()
     begin
         RunWithCheck(SeminarJnLine);
+        ;
     end;
 
     var
@@ -35,8 +36,7 @@ codeunit 50132 "CSD Seminar Jnl.-Post Line"
                 SeminarRegister."To Entry No." := NextEntryNo;
                 SeminarRegister."Creation Date" := TODAY;
                 SeminarRegister."Source Code" := SeminarJnLine."Source Code";
-                SeminarRegister."Journal Batch Name" :=
-                 SeminarJnLine."Journal Batch Name";
+                SeminarRegister."Journal Batch Name" := SeminarJnLine."Journal Batch Name";
                 SeminarRegister."User ID" := USERID;
                 SeminarRegister.Insert;
             end;
@@ -51,35 +51,26 @@ codeunit 50132 "CSD Seminar Jnl.-Post Line"
         SeminarLedgerEntry."Entry Type" := SeminarJnLine."Entry Type";
         SeminarLedgerEntry."Document No." := SeminarJnLine."Document No.";
         SeminarLedgerEntry.Description := SeminarJnLine.Description;
-        SeminarLedgerEntry."Bill-to Customer No." :=
-         SeminarJnLine."Bill-to Customer No.";
+        SeminarLedgerEntry."Bill-to Customer No." := SeminarJnLine."Bill-to Customer No.";
         SeminarLedgerEntry."Charge Type" := SeminarJnLine."Charge Type";
         SeminarLedgerEntry.Type := SeminarJnLine.Type;
         SeminarLedgerEntry.Quantity := SeminarJnLine.Quantity;
         SeminarLedgerEntry."Unit Price" := SeminarJnLine."Unit Price";
         SeminarLedgerEntry."Total Price" := SeminarJnLine."Total Price";
-        SeminarLedgerEntry."Participant Contact No." :=
-         SeminarJnLine."Participant Contact No.";
-        SeminarLedgerEntry."Participant Name" :=
-         SeminarJnLine."Participant Name";
+        SeminarLedgerEntry."Participant Contact No." := SeminarJnLine."Participant Contact No.";
+        SeminarLedgerEntry."Participant Name" := SeminarJnLine."Participant Name";
         SeminarLedgerEntry.Chargeable := SeminarJnLine.Chargeable;
-        SeminarLedgerEntry."Room Resource No." :=
-        SeminarJnLine."Room Resource No.";
-        SeminarLedgerEntry."Instructor Resource No." :=
-         SeminarJnLine."Instructor Resource No.";
+        SeminarLedgerEntry."Room Resource No." := SeminarJnLine."Room Resource No.";
+        SeminarLedgerEntry."Instructor Resource No." := SeminarJnLine."Instructor Resource No.";
         SeminarLedgerEntry."Starting Date" := SeminarJnLine."Starting Date";
-        SeminarLedgerEntry."Seminar Registration No." :=
-         SeminarJnLine."Seminar Registration No.";
-        SeminarLedgerEntry."Res. Ledger Entry No." :=
-         SeminarJnLine."Res. Ledger Entry No.";
+        SeminarLedgerEntry."Seminar Registration No." := SeminarJnLine."Seminar Registration No.";
+        SeminarLedgerEntry."Res. Ledger Entry No." := SeminarJnLine."Res. Ledger Entry No.";
         SeminarLedgerEntry."Source Type" := SeminarJnLine."Source Type";
         SeminarLedgerEntry."Source No." := SeminarJnLine."Source No.";
-        SeminarLedgerEntry."Journal Batch Name" :=
-         SeminarJnLine."Journal Batch Name";
+        SeminarLedgerEntry."Journal Batch Name" := SeminarJnLine."Journal Batch Name";
         SeminarLedgerEntry."Source Code" := SeminarJnLine."Source Code";
         SeminarLedgerEntry."Reason Code" := SeminarJnLine."Reason Code";
-        SeminarLedgerEntry." No. Series" :=
-         SeminarJnLine."Posting No. Series";
+        SeminarLedgerEntry." No. Series" := SeminarJnLine."Posting No. Series";
         SeminarLedgerEntry."Entry No." := NextEntryNo;
         NextEntryNo += 1;
         SeminarLedgerEntry.Insert;
@@ -91,8 +82,8 @@ codeunit 50132 "CSD Seminar Jnl.-Post Line"
     var
         myInt: Integer;
     begin
-        if SeminarJnLine2.EmptyLine then
-            SeminarJnLine := SeminarJnLine2;
+        // if SeminarJnLine2.EmptyLine then
+        SeminarJnLine := SeminarJnLine2;
         Code();
         SeminarJnLine2 := SeminarJnLine;
     end;

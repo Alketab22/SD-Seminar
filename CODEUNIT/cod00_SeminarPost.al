@@ -17,7 +17,7 @@ codeunit 50100 "CSD Seminar-Post"
         SeminarRegHeader.TestField(Duration);
         SeminarRegHeader.TestField("Instructor Resource No.");
         SeminarRegHeader.TestField("Room Resource No.");
-        SeminarRegHeader.TestField(Status, Rec.Status::Closed);
+        SeminarRegHeader.TestField(Status, SeminarRegHeader.Status::Closed);
         SeminarRegLine.Reset;
         SeminarRegLine.SetRange("Document No.", SeminarRegHeader."No.");
         if SeminarRegLine.IsEmpty then
@@ -31,8 +31,10 @@ codeunit 50100 "CSD Seminar-Post"
             Commit;
         end;
         SeminarRegLine.LockTable;
+
         SourceCodeSetup.Get;
         SourceCode := SourceCodeSetup."CSD Seminar";
+
         PstdSeminarRegHeader.Init;
         PstdSeminarRegHeader.TransferFields(SeminarRegHeader);
         PstdSeminarRegHeader."No." := SeminarRegHeader."Posting No.";
@@ -42,7 +44,7 @@ codeunit 50100 "CSD Seminar-Post"
         PstdSeminarRegHeader.Insert;
         Window.Update(1, StrSubstNo(Text004, SeminarRegHeader."No.", PstdSeminarRegHeader."No."));
         CopyCommentLines(
-        //SeminarCommentLine."Table Name"::"Seminar Registration Header",
+
         SeminarCommentLine."Table Name"::"Seminar Registration Header",
         SeminarCommentLine."Table Name"::"Posted Seminar Reg. Header", SeminarRegHeader."No.", PstdSeminarRegHeader."No.");
         CopyCharges(SeminarRegHeader."No.", PstdSeminarRegHeader."No.");
@@ -61,17 +63,18 @@ codeunit 50100 "CSD Seminar-Post"
             SeminarRegLine."Line Discount %" := 0;
             SeminarRegLine."Line Discount Amount" := 0;
             SeminarRegLine.Amount := 0;
-            PostSeminarJnlLine(ChargeT::Participant);
-            PstdSeminarRegLine.Init();
-            PstdSeminarRegLine.TransferFields(SeminarRegLine);
-            PstdSeminarRegLine."Document No." := PstdSeminarRegHeader."No.";
-            PstdSeminarRegLine.Insert();
-            PostCharges();
-            PostSeminarJnlLine(ChargeT::Instructor);
-            PostSeminarJnlLine(ChargeT::Room);
-            Rec.Delete(true);
         end;
-        //end;
+        PostSeminarJnlLine(ChargeT::Participant);
+        PstdSeminarRegLine.Init();
+        PstdSeminarRegLine.TransferFields(SeminarRegLine);
+        PstdSeminarRegLine."Document No." := PstdSeminarRegHeader."No.";
+        PstdSeminarRegLine.Insert();
+        PostCharges();
+        PostSeminarJnlLine(ChargeT::Instructor);
+        PostSeminarJnlLine(ChargeT::Room);
+        Rec.Delete(true);
+
+
         Rec := SeminarRegHeader;
     end;
 
@@ -142,6 +145,7 @@ codeunit 50100 "CSD Seminar-Post"
         ResJnlLine."Entry Type" := ResJnlLine."Entry Type"::Usage;
         ResJnlLine."Document No." := PstdSeminarRegHeader."No.";
         ResJnlLine."Resource No." := Resource."No.";
+
         ResJnlLine."Posting Date" := SeminarRegHeader."Posting Date";
         ResJnlLine."Reason Code" := SeminarRegHeader."Reason Code";
         ResJnlLine.Description := SeminarRegHeader."Seminar Name";
@@ -154,13 +158,14 @@ codeunit 50100 "CSD Seminar-Post"
         Resource."Base Unit of Measure";
         ResJnlLine."Unit Cost" := Resource."Unit Cost";
         ResJnlLine."Qty. per Unit of Measure" := 1;
+
         ResJnlLine.Quantity := SeminarRegHeader.Duration *
         Resource."CSD Quantity Per Day";
         ResJnlLine."Total Cost" := ResJnlLine."Unit Cost" *
         ResJnlLine.Quantity;
         ResJnlLine."CSD Seminar No." := SeminarRegHeader."Seminar No.";
         ResJnlLine."CSD Seminar Registration No." :=
-        PstdSeminarRegHeader."No.";
+        SeminarRegHeader."No.";
         ResJnlPostLine.RunWithCheck(ResJnlLine);
         ResLedgEntry.FindLast;
         exit(ResLedgEntry."Entry No.");
@@ -174,7 +179,7 @@ codeunit 50100 "CSD Seminar-Post"
         SeminarJnlLine."Seminar No." := SeminarRegHeader."Seminar No.";
         SeminarJnlLine."Posting Date" := SeminarRegHeader."Posting Date";
         SeminarJnlLine."Document Date" := SeminarRegHeader."Document Date";
-        SeminarJnlLine."Document No." := PstdSeminarRegLine."Document No.";
+        SeminarJnlLine."Document No." := PstdSeminarRegHeader."No.";
         SeminarJnlLine."Charge Type" := ChargeType;
         SeminarJnlLine."Instructor Resource No." := SeminarRegHeader."Instructor Resource No.";
         SeminarJnlLine."Starting Date" := SeminarRegHeader."Starting Date";
@@ -189,7 +194,7 @@ codeunit 50100 "CSD Seminar-Post"
                 begin
                     Instructor.get(SeminarRegHeader."Instructor Resource No.");
                     SeminarJnlLine.Description := Instructor.Name;
-                    SeminarJnlLine.Type := SeminarJnlLine.Type::Resource;
+                    SeminarJnlLine.Type := SeminarJnlLine.Type;
                     SeminarJnlLine.Chargeable := false;
                     SeminarJnlLine.Quantity := SeminarRegHeader.Duration;
                     SeminarJnlLine."Res. Ledger Entry No." := PostResJnlLine(Instructor);
@@ -207,22 +212,24 @@ codeunit 50100 "CSD Seminar-Post"
                 end;
             ChargeType::Participant:
                 begin
-                    SeminarJnlLine."Bill-to Customer No." := PstdSeminarRegLine."Bill-to Customer No.";
-                    SeminarJnlLine."Participant Contact No." := PstdSeminarRegLine."Participant Contact No.";
-                    SeminarJnlLine."Participant Name" := PstdSeminarRegLine."Participant Name";
-                    SeminarJnlLine.Description := SeminarJnlLine."Participant Name";
-                    SeminarJnlLine.Chargeable := false;
+                    SeminarJnlLine."Bill-to Customer No." := SeminarRegLine."Bill-to Customer No.";
+                    SeminarJnlLine."Participant Contact No." := SeminarRegLine."Participant Contact No.";
+                    SeminarJnlLine."Participant Name" := SeminarRegLine."Participant Name";
+                    SeminarJnlLine.Description := SeminarRegLine."Participant Name";
+                    SeminarJnlLine.Type := SeminarJnlLine.Type::Resource;
+                    SeminarJnlLine.Chargeable := SeminarRegLine."To Invoice";
+                    SeminarJnlLine.Quantity := 1;
                     SeminarJnlLine."Unit Price" := SeminarRegLine.Amount;
                     SeminarJnlLine."Total Price" := SeminarRegLine.Amount;
                 end;
             ChargeType::Charge:
                 begin
-                    SeminarJnlLine.Description := SeminarJnlLine.Description;
-                    SeminarJnlLine."Bill-to Customer No." := SeminarJnlLine."Bill-to Customer No.";
-                    SeminarJnlLine.Type := SeminarJnlLine.Type;
-                    SeminarJnlLine.Quantity := SeminarJnlLine.Quantity;
-                    SeminarJnlLine."Unit Price" := SeminarJnlLine."Unit Price";
-                    SeminarJnlLine."Total Price" := SeminarJnlLine."Total Price";
+                    SeminarJnlLine.Description := SeminarCharge.Description;
+                    SeminarJnlLine."Bill-to Customer No." := SeminarCharge."Bill-to Customer No.";
+                    SeminarJnlLine.Type := SeminarCharge.Type;
+                    SeminarJnlLine.Quantity := SeminarCharge.Quantity;
+                    SeminarJnlLine."Unit Price" := SeminarCharge."Unit Price";
+                    SeminarJnlLine."Total Price" := SeminarCharge."Total Price";
                     SeminarJnlLine.Chargeable := SeminarCharge."To Invoice";
                 end;
         end;

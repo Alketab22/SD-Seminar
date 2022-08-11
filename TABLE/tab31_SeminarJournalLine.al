@@ -56,7 +56,7 @@ table 50131 "CSD Seminar Journal Line"
             Caption = 'Charge Type';
 
         }
-        field(11; Type; Enum "Account")
+        field(11; Type; Enum Type)
         {
             Caption = 'Type';
 

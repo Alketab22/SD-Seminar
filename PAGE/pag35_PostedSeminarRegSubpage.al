@@ -10,7 +10,7 @@ page 50135 "CSD Post Seminar Reg. Subpage"
     PageType = ListPart;
     SourceTable = 50119;
     // ApplicationArea = all;
-    UsageCategory = Lists;
+    // UsageCategory = Lists;
 
     layout
     {

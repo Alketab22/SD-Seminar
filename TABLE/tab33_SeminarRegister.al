@@ -37,14 +37,13 @@ table 50133 "CSD Seminar Register"
             TableRelation = User."User Name";
 
             //TestTableRelation = false;
-            /*
-                         trigger OnLookup();
-                        var
-                            UserMgt: Codeunit "User Management";
-                        begin
-                            //UserMgt.LookupUserID("User ID");
-                           // UserMgt.LookupUserID("User ID");
-                        end; */
+
+            trigger OnLookup();
+            var
+                UserMgt: Codeunit "User Management";
+            begin
+
+            end;
         }
         field(7; "Journal Batch Name"; Code[10])
         {

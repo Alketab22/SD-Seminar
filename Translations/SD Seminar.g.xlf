@@ -1538,16 +1538,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension CSD SourceCodeSetupExt - Field CSD Seminar - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Enum 1267408499 - EnumValue 4274826855 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>G/L Account</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum Account - EnumValue G/L Account - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Enum 1267408499 - EnumValue 348912950 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Resource</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum Account - EnumValue Resource - Property Caption</note>
-        </trans-unit>
         <trans-unit id="Enum 1766782118 - EnumValue 4274826855 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>G/L Account</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1642,6 +1632,16 @@
           <source>Seminar Registration Header</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum Tables - EnumValue Seminar Registration Header - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1878130204 - EnumValue 4274826855 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>G/L Account</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Type - EnumValue G/L Account - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1878130204 - EnumValue 348912950 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Resource</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Type - EnumValue Resource - Property Caption</note>
         </trans-unit>
       </group>
     </body>

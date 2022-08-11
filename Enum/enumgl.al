@@ -1,4 +1,4 @@
-enum 50107 "Account"
+enum 50107 "Type"
 {
     Extensible = true;
 

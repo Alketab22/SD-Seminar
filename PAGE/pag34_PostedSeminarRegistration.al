@@ -182,6 +182,9 @@ page 50134 "CSD Posted Seminar Reg."
             action("&Navigate")
             {
                 ApplicationArea = all;
+                Image = Navigate;
+                Promoted = true;
+                PromotedCategory = Process;
                 trigger OnAction()
                 var
                     Navigate: Page Navigate;

@@ -26,7 +26,7 @@ codeunit 50131 "CSD Seminar Jnl.-Check Line"
         SemJnlLine.TestField("Instructor Resource No.");
         SemJnlLine.TestField("Seminar No.");
         case SemJnlLine."Charge Type" of
-            SemJnlLine."Charge Type"::Instructor:
+            "ChargeT"::Instructor:
                 SemJnlLine.TestField("Instructor Resource No.");
             SemJnlLine."Charge Type"::Room:
                 SemJnlLine.TestField("Room Resource No.");
@@ -36,7 +36,9 @@ codeunit 50131 "CSD Seminar Jnl.-Check Line"
         if SemJnlLine.Chargeable then
             SemJnlLine.TestField("Bill-to Customer No.");
         if SemJnlLine."Posting Date" = ClosingDate(SemJnlLine."Posting Date") then
-            SemJnlLine.FieldError("Posting Date", ClosingDateTxt);
+            SemJnlLine.FieldError(SemJnlLine."Posting Date", ClosingDateTxt);
+
+
         if (AllowPostingFrom = 0D) and (AllowPostingTo = 0D) then begin
             if UserId <> '' then
                 if UserSetup.GET(UserId) then begin
