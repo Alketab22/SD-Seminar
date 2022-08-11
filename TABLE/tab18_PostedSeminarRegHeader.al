@@ -119,7 +119,7 @@ table 50118 "CSD Posted Seminar Reg. Header"
 
         {
             Caption = 'Comment';
-            // CalcFormula = lookup(Resource.Name where("No." = field("Instructor Resource No."), Type = const(Person)));
+            //CalcFormula = lookup(Resource.Name where("No." = field("Instructor Resource No."), Type = const(Person)));
             Editable = false;
             FieldClass = FlowField;
             CalcFormula = exist("CSD Seminar Comment Line" where("Table Name" = const("Posted Seminar Reg. Header"), "No." = field("No.")));

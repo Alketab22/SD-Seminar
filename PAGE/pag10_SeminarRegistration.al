@@ -7,8 +7,8 @@ page 50110 "CSD Seminar Registration"
     Caption = 'Seminar Registration';
     PageType = Document;
     SourceTable = "CSD Seminar Reg. Header";
-    //UsageCategory = Tasks;
-    //ApplicationArea = all;
+    UsageCategory = Tasks;
+    ApplicationArea = all;
     layout
     {
         area(content)
@@ -74,7 +74,7 @@ page 50110 "CSD Seminar Registration"
             }
 
 
-            part(SeminarRegistrationLines; "CSD Seminar Reg. Subpage")
+            part(SeminarRegistrationLines; 50135)
             {
                 ApplicationArea = all;
                 Caption = 'Lines';

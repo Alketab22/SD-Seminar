@@ -4,7 +4,7 @@ page 50134 "CSD Posted Seminar Reg."
     //   Chapter 7 - Lab 3
     //     - Created new page
 
-    Caption = 'Posted Seminar Registration';
+    Caption = 'Seminar Registration';
     Editable = false;
     PageType = Document;
     SourceTable = 50118;
@@ -67,10 +67,11 @@ page 50134 "CSD Posted Seminar Reg."
                     ApplicationArea = all;
                 }
             }
-            //Pse e kemi vendos me idrange dhe me emrin?
-            part(SeminarRegistrationLines; 50135)
+
+            part(SeminarRegistrationLines; "CSD Post Seminar Reg. Subpage")
             {
-                SubPageLink = "Document No." = Field("No. Series");
+
+                SubPageLink = "Document No." = field("No. Series");
                 ApplicationArea = all;
             }
             group("Seminar Room")
