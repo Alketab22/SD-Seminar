@@ -14,6 +14,16 @@ codeunit 50132 "CSD Seminar Jnl.-Post Line"
         SeminarJnlCheckLine: Codeunit "CSD Seminar Jnl.-Check Line";
         NextEntryNo: Integer;
 
+    procedure RunWithCheck(var SeminarJnLine2: Record "CSD Seminar Journal Line");
+    var
+        myInt: Integer;
+    begin
+
+        SeminarJnlLine := SeminarJnLine2;
+        Code();
+        SeminarJnLine2 := SeminarJnlLine;
+    end;
+
     local procedure Code()
     var
         myInt: Integer;
@@ -78,15 +88,7 @@ codeunit 50132 "CSD Seminar Jnl.-Post Line"
 
 
 
-    procedure RunWithCheck(var SeminarJnlLine2: Record "CSD Seminar Journal Line");
-    var
-        myInt: Integer;
-    begin
-        // if SeminarJnLine2.EmptyLine then
-        SeminarJnlLine := SeminarJnlLine2;
-        Code();
-        SeminarJnlLine2 := SeminarJnlLine;
-    end;
+
 
 
 

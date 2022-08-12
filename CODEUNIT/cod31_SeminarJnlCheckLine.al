@@ -35,6 +35,7 @@ codeunit 50131 "CSD Seminar Jnl.-Check Line"
         end;
         if SemJnlLine.Chargeable then
             SemJnlLine.TestField("Bill-to Customer No.");
+
         if SemJnlLine."Posting Date" = ClosingDate(SemJnlLine."Posting Date") then
             SemJnlLine.FieldError(SemJnlLine."Posting Date", ClosingDateTxt);
 

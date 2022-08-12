@@ -1198,6 +1198,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page CSD Posted Seminar Reg. - Action Co&amp;mments - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 2994756472 - Action 1405007275 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&amp;Navigate</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CSD Posted Seminar Reg. - Action &amp;Navigate - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 3186773354 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Posted Seminar Reg. List</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1257,106 +1262,6 @@
           <source>Seminar Ledger Entries</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page CSD Seminar Ledger Entries - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2466105384 - Control 2965034906 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Bill-to Customer No.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page CSD Seminar Ledger Entries - Control Bill-to Customer No. - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2466105384 - Control 172424966 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Charge Type</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page CSD Seminar Ledger Entries - Control Charge Type - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2466105384 - Control 1290961796 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Chargeable</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page CSD Seminar Ledger Entries - Control Chargeable - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2466105384 - Control 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Description</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page CSD Seminar Ledger Entries - Control Description - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2466105384 - Control 580412389 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Document Date</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page CSD Seminar Ledger Entries - Control Document Date - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2466105384 - Control 486908828 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Document No.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page CSD Seminar Ledger Entries - Control Document No. - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2466105384 - Control 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Entry No.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page CSD Seminar Ledger Entries - Control Entry No. - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2466105384 - Control 149522872 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Entry Type</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page CSD Seminar Ledger Entries - Control Entry Type - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2466105384 - Control 2567013052 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Instructor Resource No.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page CSD Seminar Ledger Entries - Control Instructor Resource No. - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2466105384 - Control 2868535108 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Participant Contact No.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page CSD Seminar Ledger Entries - Control Participant Contact No. - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2466105384 - Control 2349749900 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Participant Name</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page CSD Seminar Ledger Entries - Control Participant Name - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2466105384 - Control 3710982960 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Posting Date</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page CSD Seminar Ledger Entries - Control Posting Date - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2466105384 - Control 2704404533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Quantity</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page CSD Seminar Ledger Entries - Control Quantity - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2466105384 - Control 4142915974 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Room Resource No.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page CSD Seminar Ledger Entries - Control Room Resource No. - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2466105384 - Control 3972529724 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Seminar No.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page CSD Seminar Ledger Entries - Control Seminar No. - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2466105384 - Control 571466171 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Seminar Registration No.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page CSD Seminar Ledger Entries - Control Seminar Registration No. - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2466105384 - Control 460889064 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Starting Date</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page CSD Seminar Ledger Entries - Control Starting Date - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2466105384 - Control 2812148497 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Total Price</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page CSD Seminar Ledger Entries - Control Total Price - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2466105384 - Control 1878130204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Type</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page CSD Seminar Ledger Entries - Control Type - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2466105384 - Control 2937233469 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Unit Price</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page CSD Seminar Ledger Entries - Control Unit Price - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 729898515 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Seminar List</source>

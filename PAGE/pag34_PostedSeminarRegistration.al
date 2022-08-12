@@ -183,6 +183,7 @@ page 50134 "CSD Posted Seminar Reg."
             action("&Navigate")
             {
                 ApplicationArea = all;
+                Caption = '&Navigate';
                 Image = Navigate;
                 Promoted = true;
                 PromotedCategory = Process;
