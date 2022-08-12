@@ -118,8 +118,7 @@ page 50101 "CSD Seminar Card"
                     Image = Timesheet;
                     Promoted = true;
                     PromotedCategory = Process;
-                    // image per ca perdoret??
-                    //shortcutkey per ca perdret
+
 
                 }
 

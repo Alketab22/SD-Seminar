@@ -8,7 +8,7 @@ page 50135 "CSD Post Seminar Reg. Subpage"
     Caption = 'Lines';
     DelayedInsert = true;
     PageType = ListPart;
-    SourceTable = 50119;
+    SourceTable = "CSD Posted Seminar Reg. Line";
     // ApplicationArea = all;
     // UsageCategory = Lists;
 

@@ -8,7 +8,7 @@ codeunit 50139 "CSD EventSubscriptions"
         ResJournalLine: Record "Res. Journal Line");
     begin
         ResLedgerEntry."CSD Seminar No." := ResJournalLine."CSD Seminar No.";
-        ResLedgerEntry."CSD Seminar Registration No." := ResJournalLine."CSD Seminar Registration No."
+        ResLedgerEntry."CSD Seminar Registration No." := ResJournalLine."CSD Seminar Registration No.";
 
     end;
 
@@ -42,6 +42,27 @@ codeunit 50139 "CSD EventSubscriptions"
             DocumentEntry."Table Name" := CopyStr(PostedSeminarRegistrationHeader.TableCaption, 1, MaxStrLen(DocumentEntry."Table Name"));
             DocumentEntry."No. of Records" := DocNoOfRec;
             DocumentEntry.Insert();
+        end;
+        if SeminarLedgerEntry.ReadPermission then begin
+            SeminarLedgerEntry.Reset();
+            SeminarLedgerEntry.SetFilter("Document No.", DocNoFilter);
+            SeminarLedgerEntry.SetFilter("Posting Date", PostingDateFilter);
+            DocNoOfRec := SeminarLedgerEntry.Count;
+
+            if DocNoOfRec = 0 then
+                exit;
+            if DocumentEntry.FindLast() then
+                NextEntryNo := DocumentEntry."Entry No." + 1
+            else
+                NextEntryNo := 1;
+            DocumentEntry.Init();
+            DocumentEntry."Entry No." := NextEntryNo;
+            DocumentEntry."Table ID" := Database::"CSD Seminar Ledger Entry";
+            DocumentEntry."Document Type" := "Document Entry Document Type"::Quote;
+            DocumentEntry."Table Name" := CopyStr(SeminarLedgerEntry.TableCaption, 1, MaxStrLen(DocumentEntry."Table Name"));
+            DocumentEntry."No. of Records" := DocNoOfRec;
+            DocumentEntry.Insert;
+
         end;
 
     end;

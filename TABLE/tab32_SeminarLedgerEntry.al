@@ -77,9 +77,12 @@ table 50132 "CSD Seminar Ledger Entry"
             Caption = 'Participant Contact No.';
             TableRelation = Contact;
         }
-        field(15; "Participant Name"; Text[50])
+        field(15; "Participant Name"; Text[100])
         {
             Caption = 'Participant Name';
+            // CalcFormula = Lookup(Contact.Name where("No." = Field("Participant Contact No.")));
+            // FieldClass = FlowField;
+            // Editable = false;
         }
         field(16; Chargeable; Boolean)
         {

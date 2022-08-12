@@ -7,7 +7,7 @@ page 50134 "CSD Posted Seminar Reg."
     Caption = 'Posted Seminar Registration';
     Editable = false;
     PageType = Document;
-    SourceTable = 50118;
+    SourceTable = "CSD Posted Seminar Reg. Header";
     //UsageCategory = Documents;
     // ApplicationArea = all;
 
@@ -71,7 +71,7 @@ page 50134 "CSD Posted Seminar Reg."
             part(SeminarRegistrationLines; "CSD Post Seminar Reg. Subpage")
             {
 
-                SubPageLink = "Document No." = field("No. Series");
+                SubPageLink = "Document No." = field("No.");
                 ApplicationArea = all;
             }
             group("Seminar Room")

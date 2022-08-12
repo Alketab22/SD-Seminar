@@ -8,7 +8,7 @@ page 50136 "CSD Posted Seminar Reg. List"
     CardPageID = "CSD Posted Seminar Reg.";
     Editable = false;
     PageType = List;
-    SourceTable = 50118;
+    SourceTable = "CSD Posted Seminar Reg. Header";
     ApplicationArea = all;
     UsageCategory = Lists;
 

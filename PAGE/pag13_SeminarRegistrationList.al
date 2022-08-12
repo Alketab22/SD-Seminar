@@ -76,7 +76,7 @@ page 50113 "CSD Seminar Registration List"
                 action("Co&mments")
                 {
 
-
+                    ApplicationArea = all;
                     Caption = 'Co&mments';
                     Image = Comment;
                     RunObject = Page 50106;
@@ -86,6 +86,7 @@ page 50113 "CSD Seminar Registration List"
                 }
                 action("&Charges")
                 {
+                    ApplicationArea = all;
                     Caption = '&Charges';
                     Image = Costs;
                     RunObject = Page 50124;
@@ -93,6 +94,7 @@ page 50113 "CSD Seminar Registration List"
                 }
                 action("&Post")
                 {
+                    ApplicationArea = all;
                     Caption = '&Post';
                     Image = PostDocument;
                     Promoted = true;

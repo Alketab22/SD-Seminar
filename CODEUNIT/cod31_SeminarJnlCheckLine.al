@@ -25,7 +25,9 @@ codeunit 50131 "CSD Seminar Jnl.-Check Line"
         SemJnlLine.TestField("Posting Date");
         SemJnlLine.TestField("Instructor Resource No.");
         SemJnlLine.TestField("Seminar No.");
-        case SemJnlLine."Charge Type" of
+
+        case
+             SemJnlLine."Charge Type" of
             "ChargeT"::Instructor:
                 SemJnlLine.TestField("Instructor Resource No.");
             SemJnlLine."Charge Type"::Room:

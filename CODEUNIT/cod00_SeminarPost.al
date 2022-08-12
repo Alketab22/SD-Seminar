@@ -1,8 +1,6 @@
 codeunit 50100 "CSD Seminar-Post"
 {
-    // CSD1.00 - 2018-01-01 - D. E. Veloper
-    //   Chapter 7 - Lab 5-2
-    //     - Created new codeunit
+
 
     TableNo = 50110;
 
@@ -10,7 +8,7 @@ codeunit 50100 "CSD Seminar-Post"
     begin
         ClearAll();
         SeminarRegHeader := Rec;
-        //with  SeminarRegHeader do begin
+
         SeminarRegHeader.TestField("Posting Date");
         SeminarRegHeader.TestField("Document Date");
         SeminarRegHeader.TestField("Seminar No.");
@@ -44,7 +42,6 @@ codeunit 50100 "CSD Seminar-Post"
         PstdSeminarRegHeader.Insert;
         Window.Update(1, StrSubstNo(Text004, SeminarRegHeader."No.", PstdSeminarRegHeader."No."));
         CopyCommentLines(
-
         SeminarCommentLine."Table Name"::"Seminar Registration Header",
         SeminarCommentLine."Table Name"::"Posted Seminar Reg. Header", SeminarRegHeader."No.", PstdSeminarRegHeader."No.");
         CopyCharges(SeminarRegHeader."No.", PstdSeminarRegHeader."No.");
@@ -53,28 +50,26 @@ codeunit 50100 "CSD Seminar-Post"
         SeminarRegLine.SetRange("Document No.", SeminarRegHeader."No.");
         if SeminarRegLine.FindSet then begin
             repeat
+                Window.Update(2, LineCount);
+                SeminarRegLine.TestField("Bill-to Customer No.");
+                SeminarRegLine.TestField("Participant Contact No.");
+                if not SeminarRegLine."To Invoice" then begin
+                    SeminarRegLine."Seminar Price" := 0;
+                    SeminarRegLine."Line Discount %" := 0;
+                    SeminarRegLine."Line Discount Amount" := 0;
+                    SeminarRegLine.Amount := 0;
+                end;
+                PostSeminarJnlLine(ChargeT::Participant);
+                PstdSeminarRegLine.Init();
+                PstdSeminarRegLine.TransferFields(SeminarRegLine);
+                PstdSeminarRegLine."Document No." := PstdSeminarRegHeader."No.";
+                PstdSeminarRegLine.Insert();
             until SeminarRegLine.Next = 0;
         end;
-        Window.Update(2, LineCount);
-        SeminarRegLine.TestField("Bill-to Customer No.");
-        SeminarRegLine.TestField("Participant Contact No.");
-        if not SeminarRegLine."To Invoice" then begin
-            SeminarRegLine."Seminar Price" := 0;
-            SeminarRegLine."Line Discount %" := 0;
-            SeminarRegLine."Line Discount Amount" := 0;
-            SeminarRegLine.Amount := 0;
-        end;
-        PostSeminarJnlLine(ChargeT::Participant);
-        PstdSeminarRegLine.Init();
-        PstdSeminarRegLine.TransferFields(SeminarRegLine);
-        PstdSeminarRegLine."Document No." := PstdSeminarRegHeader."No.";
-        PstdSeminarRegLine.Insert();
         PostCharges();
         PostSeminarJnlLine(ChargeT::Instructor);
         PostSeminarJnlLine(ChargeT::Room);
-        Rec.Delete(true);
-
-
+        SeminarRegHeader.Delete(true);
         Rec := SeminarRegHeader;
     end;
 
@@ -241,10 +236,12 @@ codeunit 50100 "CSD Seminar-Post"
     begin
         SeminarCharge.Reset();
         SeminarCharge.SetRange("Document No.", SeminarRegHeader."No.");
-        if SeminarCharge.FindSet(false, false) then
+        if SeminarCharge.FindSet(false, false) then begin
             repeat
                 PostSeminarJnlLine(ChargeT::Charge);  //Charge
             until SeminarCharge.Next() = 0;
+            SeminarCharge.DeleteAll();
+        end;
     end;
 }
 

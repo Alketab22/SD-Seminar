@@ -84,7 +84,7 @@ page 50102 "CSD Seminar List"
                 action("&Registrations")
                 {
                     Caption = '&Registrations';
-                    RunObject = page "CSD Posted Seminar Reg. List";
+                    RunObject = page "CSD Seminar Registration List";
                     RunPageLink = "Seminar No." = field("No.");
                     Image = Timesheet;
                     Promoted = true;
@@ -97,7 +97,7 @@ page 50102 "CSD Seminar List"
         {
             action("Seminar Registration")
             {
-                RunObject = page "CSD Posted Seminar Reg.";
+                RunObject = page "CSD Seminar Registration";
                 RunPageLink = "Seminar No." = field("No.");
                 RunPageMode = Create;
                 Image = NewTimesheet;
