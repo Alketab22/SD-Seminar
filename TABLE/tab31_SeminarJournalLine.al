@@ -84,6 +84,7 @@ table 50131 "CSD Seminar Journal Line"
         field(16; "Participant Name"; Text[50])
         {
             Caption = 'Participant Name';
+
         }
         field(17; Chargeable; Boolean)
         {
