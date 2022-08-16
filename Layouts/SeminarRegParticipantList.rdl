@@ -1077,7 +1077,7 @@
                       </Style>
                     </TextRun>
                     <TextRun>
-                      <Value>“ of “ </Value>
+                      <Value> of </Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Times New Roman</FontFamily>
@@ -1125,7 +1125,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>User!</Value>
+                      <Value />
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Times New Roman</FontFamily>
@@ -1161,6 +1161,36 @@
               <Height>0.32417in</Height>
               <Width>2.1875in</Width>
               <ZIndex>3</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Company_Name">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Last(Fields!Company_Name.Value, "DataSet_Result")</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Company_Name</rd:DefaultName>
+              <Top>1.2175in</Top>
+              <Left>0.41542in</Left>
+              <Height>0.25in</Height>
+              <Width>2.05208in</Width>
+              <ZIndex>4</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>

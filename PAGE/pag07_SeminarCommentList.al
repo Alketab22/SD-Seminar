@@ -5,7 +5,7 @@ page 50107 "CSD Seminar Comment List"
     Caption = 'Seminar Comment List';
     Editable = false;
     ApplicationArea = all;
-    UsageCategory = Administration;
+    UsageCategory = Lists;
     layout
     {
         area(Content)
