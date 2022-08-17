@@ -17,10 +17,13 @@ page 50140 "CSD Seminar Manager Activities"
                 field(Planned; Rec.Planned)
                 {
                     ApplicationArea = All;
+                    Caption = 'Planned';
+
                 }
                 field(Registered; Rec.Registered)
                 {
                     ApplicationArea = all;
+                    Caption = 'Registered';
                 }
                 actions
                 {
@@ -29,6 +32,7 @@ page 50140 "CSD Seminar Manager Activities"
                         Caption = 'New';
                         RunObject = page "CSD Seminar Registration";
                         RunPageMode = Create;
+                        ApplicationArea = all;
                     }
 
                 }
@@ -38,6 +42,7 @@ page 50140 "CSD Seminar Manager Activities"
                 field(Closed; Rec.Closed)
                 {
                     ApplicationArea = all;
+                    Caption = 'Closed';
                 }
             }
         }
@@ -47,15 +52,7 @@ page 50140 "CSD Seminar Manager Activities"
     {
         area(Processing)
         {
-            action(ActionName)
-            {
-                ApplicationArea = All;
 
-                trigger OnAction()
-                begin
-
-                end;
-            }
         }
     }
 
@@ -67,7 +64,7 @@ page 50140 "CSD Seminar Manager Activities"
     begin
         if not Rec.Get() then begin
             Rec.Init();
-            Rec.Reset();
+            Rec.Insert();
         end;
     end;
 }

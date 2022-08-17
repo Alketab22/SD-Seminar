@@ -1,8 +1,8 @@
 page 50141 "CSD My Seminar"
 {
     PageType = ListPart;
-    ApplicationArea = All;
-    UsageCategory = Lists;
+    // ApplicationArea = All;
+    // UsageCategory = Lists;
     SourceTable = "CSD My Seminars";
     Caption = 'My Seminar';
 
@@ -67,7 +67,7 @@ page 50141 "CSD My Seminar"
         if Seminar.Get(Rec."Seminar No.") then;
     end;
 
-    trigger OnNewRecord(BelowxRec: Boolean);
+    trigger OnNewRecord(BelowRec: Boolean);
 
     begin
         Clear(Seminar);
