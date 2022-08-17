@@ -13,7 +13,7 @@ page 50102 "CSD Seminar List"
         {
             repeater("group")
             {
-                Caption = 'Perseritje';
+                //  Caption = 'Perseritje';
                 field("No."; Rec."No.")
                 {
                     ApplicationArea = all;

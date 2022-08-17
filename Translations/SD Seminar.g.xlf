@@ -1358,11 +1358,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page CSD Seminar List - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 729898515 - Control 2617079169 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Perseritje</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page CSD Seminar List - Control group - Property Caption</note>
-        </trans-unit>
         <trans-unit id="Page 729898515 - Action 103722640 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>&amp;Registrations</source>
           <note from="Developer" annotates="general" priority="2"></note>
