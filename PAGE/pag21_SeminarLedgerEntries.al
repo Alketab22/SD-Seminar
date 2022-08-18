@@ -15,33 +15,27 @@ page 50121 "CSD Seminar Ledger Entries"
 
                 field("Posting Date"; Rec."Posting Date")
                 {
-
                     ApplicationArea = all;
                 }
                 field("Document No."; Rec."Document No.")
                 {
-
                     ApplicationArea = all;
                 }
                 field("Document Date"; Rec."Document Date")
                 {
                     Visible = false;
                     ApplicationArea = all;
-
                 }
                 field("Entry Type"; Rec."Entry Type")
                 {
-                    ;
                     ApplicationArea = all;
                 }
                 field("Seminar No."; Rec."Seminar No.")
                 {
-
                     ApplicationArea = all;
                 }
                 field("Description"; Rec."Description")
                 {
-
                     ApplicationArea = all;
                 }
                 field("Bill-to Customer No."; Rec."Bill-to Customer No.")

@@ -1,8 +1,8 @@
 page 50142 "CSD Seminar Manager RoleCenter"
 {
     PageType = RoleCenter;
-    ApplicationArea = All;
-    UsageCategory = Administration;
+    // ApplicationArea = All;
+    // UsageCategory = Administration;
     Caption = 'Seminar Manager RoleCenter';
 
     layout

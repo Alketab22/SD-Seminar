@@ -1,34 +1,25 @@
 pageextension 50100 "CSD ResourceCardExt" extends "Resource Card"
 {
-
     layout
-
     {
-
         addlast(General)
         {
-            field("CSD Resource Type"; xRec."CSD Resource Type")
+            field("CSD Resource Type"; Rec."CSD Resource Type")
             {
                 ApplicationArea = all;
             }
-            field("CSD Quantity Per Day"; xRec."CSD Quantity Per Day")
+            field("CSD Quantity Per Day"; Rec."CSD Quantity Per Day")
             {
                 ApplicationArea = all;
             }
-
         }
-
-
-
         addafter("Personal data")
         {
-
             group("CSD Room")
             {
-
                 Caption = 'Room';
                 Visible = ShowMaxField;
-                field("CSD Maximum Participants"; xRec."CSD Maximum Participants")
+                field("CSD Maximum Participants"; Rec."CSD Maximum Participants")
                 {
                     ApplicationArea = all;
                 }
@@ -43,10 +34,7 @@ pageextension 50100 "CSD ResourceCardExt" extends "Resource Card"
         CurrPage.Update(false);
     end;
 
-
     var
         [InDataSet]
         ShowMaxField: Boolean;
-
-
 }

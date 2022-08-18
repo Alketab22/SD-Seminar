@@ -17,7 +17,6 @@ table 50101 "CSD Seminar"
                     "No. Series" := '';
                 end;
             end;
-
         }
         field(20; "Name"; Text[50])
         {
@@ -29,14 +28,11 @@ table 50101 "CSD Seminar"
                 ("Search Name" = '') then
                     "Search Name" := Name;
             end;
-
-
         }
         field(30; "Seminar Duration"; Decimal)
         {
             DecimalPlaces = 0 : 1;
             Caption = 'Seminar Duration';
-
         }
         field(40; "Minimum participants"; Integer)
         {
@@ -65,11 +61,9 @@ table 50101 "CSD Seminar"
             FieldClass = FlowField;
             CalcFormula = exist("CSD Seminar Comment Line" where("Table Name" = const(Seminar),
             "No." = field("No.")));
-
         }
         field(100; "Seminar Price"; Decimal)
         {
-
             Caption = 'Seminar Price';
             AutoFormatType = 1;
         }
@@ -94,18 +88,14 @@ table 50101 "CSD Seminar"
         {
             Caption = 'VAT Prod. Posting Group';
             TableRelation = "VAT Product Posting Group";
-
         }
         field(130; "No. Series"; Code[10])
         {
             Caption = 'No. Series';
             TableRelation = "No. Series";
             Editable = false;
-
         }
     }
-
-
     keys
     {
         key(PK; "No.")
@@ -167,9 +157,5 @@ table 50101 "CSD Seminar"
             exit(true);
         end;
     end;
-
-
-
-
 }
 

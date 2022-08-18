@@ -1,8 +1,8 @@
 page 50140 "CSD Seminar Manager Activities"
 {
     PageType = CardPart;
-    ApplicationArea = All;
-    UsageCategory = Administration;
+    // ApplicationArea = All;
+    //UsageCategory = Administration;
     SourceTable = "CSD Seminar Cue";
     Caption = 'Seminar Manager Activities';
     Editable = false;

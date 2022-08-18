@@ -85,7 +85,6 @@ table 50110 "CSD Seminar Reg. Header"
         field(7; Status; Enum "Statuss")
         {
             Caption = 'Status';
-
         }
         field(8; "Duration"; Decimal)
         {
@@ -368,8 +367,6 @@ table 50110 "CSD Seminar Reg. Header"
         SeminarSetup.GET;
         NoSeriesMgt.SetDefaultSeries("Posting No. Series",
         SeminarSetup."Posted Seminar Reg. Nos.");
-
-
     end;
 
     procedure AssistEdit(OldSeminarRegHeader: Record "CSD Seminar Reg. Header"): Boolean;

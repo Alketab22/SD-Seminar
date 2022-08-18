@@ -12,7 +12,4 @@ tableextension 50101 "CSD SourceCodeSetupExt" extends "Source Code Setup"
             TableRelation = "Source Code";
         }
     }
-
-    var
-        myInt: Integer;
 }

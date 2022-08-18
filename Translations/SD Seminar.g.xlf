@@ -1858,6 +1858,21 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum CSD Resource Type - EnumValue Internal - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Enum 2793141957 - EnumValue 18652612 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum CSD Seminar Type - EnumValue  - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2793141957 - EnumValue 4239863583 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Instructor</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum CSD Seminar Type - EnumValue Instructor - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2793141957 - EnumValue 1631617913 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Room</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum CSD Seminar Type - EnumValue Room - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Enum 3475288728 - EnumValue 1046555957 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Cancelation</source>
           <note from="Developer" annotates="general" priority="2"></note>

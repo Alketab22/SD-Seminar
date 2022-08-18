@@ -10,19 +10,15 @@ table 50118 "CSD Posted Seminar Reg. Header"
         field(1; "No."; Code[20])
         {
             Caption = 'No.';
-
         }
         field(2; "Starting Date"; Date)
         {
             Caption = 'Starting Date';
-
-
         }
         field(3; "Seminar No."; Code[20])
         {
             TableRelation = "CSD Seminar";
             Caption = 'Seminar No.';
-
         }
         field(4; "Seminar Name"; Text[50])
         {
@@ -31,7 +27,6 @@ table 50118 "CSD Posted Seminar Reg. Header"
         field(5; "Instructor Resource No."; Code[20])
         {
             TableRelation = Resource where(Type = const(Person));
-
         }
         field(6; "Instructor Name"; Text[100])
         {
@@ -44,7 +39,6 @@ table 50118 "CSD Posted Seminar Reg. Header"
         field(7; Status; Enum "Statuss")
         {
             Caption = 'Status';
-
         }
         field(8; "Duration"; Decimal)
         {
@@ -63,7 +57,6 @@ table 50118 "CSD Posted Seminar Reg. Header"
         {
             TableRelation = Resource where(Type = const(Machine));
             Caption = 'Room Resource No.';
-
         }
         field(12; "Room Name"; Text[30])
         {
@@ -82,12 +75,10 @@ table 50118 "CSD Posted Seminar Reg. Header"
             Caption = 'Room Post Code';
             TableRelation = "Post Code".Code;
             ValidateTableRelation = false;
-
         }
         field(16; "Room City"; Text[30])
         {
             Caption = 'Room City';
-
         }
         field(17; "Room Country/Reg. Code"; Code[10])
         {
@@ -102,8 +93,6 @@ table 50118 "CSD Posted Seminar Reg. Header"
         {
             AutoFormatType = 1;
             Caption = 'Seminar Price';
-
-
         }
         field(20; "Gen. Prod. Posting Group"; Code[10])
         {

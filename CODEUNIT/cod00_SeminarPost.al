@@ -1,7 +1,5 @@
 codeunit 50100 "CSD Seminar-Post"
 {
-
-
     TableNo = 50110;
 
     trigger OnRun();

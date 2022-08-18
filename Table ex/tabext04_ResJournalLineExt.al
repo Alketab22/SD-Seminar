@@ -11,7 +11,6 @@ tableextension 50104 "CSD ResJournalLineExt" extends "Res. Journal Line"
         {
             Caption = 'Seminar Registration No.';
             TableRelation = "CSD Seminar Reg. Header";
-
         }
     }
 }

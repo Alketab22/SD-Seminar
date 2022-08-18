@@ -8,6 +8,4 @@ codeunit 50102 "CSD SeminarRegPrinted"
         Rec.Modify();
         Commit();
     end;
-
-
 }

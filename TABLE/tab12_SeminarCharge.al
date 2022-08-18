@@ -172,11 +172,6 @@ table 50112 "CSD Seminar Charge"
         {
         }
     }
-
-    fieldgroups
-    {
-    }
-
     trigger OnDelete();
     begin
         TestField(Registered, false);

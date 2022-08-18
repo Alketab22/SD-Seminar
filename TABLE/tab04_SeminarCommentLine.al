@@ -9,7 +9,6 @@ table 50104 "CSD Seminar Comment Line"
         field(10; "Table Name"; Enum "Tables")
         {
             Caption = 'Table Name';
-
         }
         field(20; "Document Line Number"; Integer)
         {

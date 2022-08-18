@@ -28,7 +28,7 @@ codeunit 50139 "CSD EventSubscriptions"
             PostedSeminarRegistrationHeader.SetFilter("No.", DocNoFilter);
             PostedSeminarRegistrationHeader.SetFilter("Posting Date", PostingDateFilter);
             DocNoOfRec := PostedSeminarRegistrationHeader.Count;
-            //  with DocumentEntry do begin
+
             if DocNoOfRec = 0 then
                 exit;
             if DocumentEntry.FindLast() then
@@ -67,8 +67,6 @@ codeunit 50139 "CSD EventSubscriptions"
 
     end;
 
-    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
-
     [EventSubscriber(ObjectType::Page, 344, 'OnAfterNavigateShowRecords', '', true, true)]
     local procedure ExtendNavigateOnAfterNavigateShowRecords
         (TableID: Integer;
@@ -98,6 +96,5 @@ codeunit 50139 "CSD EventSubscriptions"
                 end;
         end;
     end;
-
 }
 

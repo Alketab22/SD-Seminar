@@ -11,8 +11,6 @@ table 50105 "CSD Seminar Report Selections"
         field(1; Usage; Enum "Usage")
         {
             Caption = 'Usage';
-            //OptionCaption = 'Registration';
-            // OptionMembers = Registration;
         }
         field(2; Sequence; Code[10])
         {
@@ -44,11 +42,6 @@ table 50105 "CSD Seminar Report Selections"
         {
         }
     }
-
-    fieldgroups
-    {
-    }
-
     var
         ReportSelection2: Record "CSD Seminar Report Selections";
 

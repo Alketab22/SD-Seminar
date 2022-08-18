@@ -14,6 +14,4 @@ pageextension 50104 "CSD ResourceLedgerEntryExt" extends "Resource Ledger Entrie
             }
         }
     }
-
-
 }

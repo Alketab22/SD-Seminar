@@ -99,10 +99,4 @@ table 50121 "CSD Posted Seminar Charge"
         {
         }
     }
-
-    fieldgroups
-    {
-    }
-
-
 }
